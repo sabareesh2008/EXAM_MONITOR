@@ -160,3 +160,12 @@ Run `start.bat` or `python main.py --dashboard`. The background monitor repeats 
 ## Important: existing V2 installation
 
 Back up your existing `data/` folder and `.env` before replacing project files. Keep the existing `.env` and do not overwrite it with `.env.example`.
+
+
+## Free cloud monitoring with GitHub Actions
+
+This repository includes `.github/workflows/vsb-exam-watch.yml`. Push the project to a **private GitHub repository**, enable Actions, configure the repository secrets and variables listed in `.github/SECRETS_SETUP.md`, and keep the workflow on the default branch. It runs approximately every 30 minutes and can also be started manually from the Actions tab.
+
+The workflow stores its SQLite history at `data/state/vsb_exam_watch.sqlite3` and commits that file after each run, so previously seen PDFs and sent-alert records persist between GitHub-hosted runners. Downloaded PDFs, screenshots and logs are temporary. GitHub scheduled runs can be delayed and are not a guaranteed real-time service.
+
+Before relying on notifications, confirm the six configured exam dates and FN/AN sessions in `vsb_watch/schedule.py` against the official timetable. The current schedule treats both FN and AN as watched sessions on each configured date; change this if the actual timetable differs.

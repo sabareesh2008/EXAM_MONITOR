@@ -1,7 +1,12 @@
 .env
 .venv/
+venv/
 __pycache__/
 .pytest_cache/
 *.py[cod]
 data/*
 !data/.gitkeep
+!data/state/
+data/state/*
+!data/state/.gitkeep
+!data/state/vsb_exam_watch.sqlite3
