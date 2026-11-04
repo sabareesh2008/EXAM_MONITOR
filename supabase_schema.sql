@@ -39,12 +39,12 @@ CREATE POLICY "Public Read Allotments"
     TO anon, authenticated
     USING (true);
 
--- Allow service_role to insert, update, delete records during automated ingestion
-DROP POLICY IF EXISTS "Service Role Manage Allotments" ON public.allotments;
-CREATE POLICY "Service Role Manage Allotments"
+-- Allow read, insert, and update so automated ingestion works with either anon or service key
+DROP POLICY IF EXISTS "Public Manage Allotments" ON public.allotments;
+CREATE POLICY "Public Manage Allotments"
     ON public.allotments
     FOR ALL
-    TO service_role
+    TO anon, authenticated, service_role
     USING (true)
     WITH CHECK (true);
 
