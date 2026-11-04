@@ -23,10 +23,30 @@ def main():
  p.add_argument('--search-register',help='Search already downloaded PDFs for a register number')
  p.add_argument('--show-schedule',action='store_true')
  p.add_argument('--test-email',action='store_true',help='Send a test notification email using .env settings')
+ p.add_argument('--test-allotment',action='store_true',help='Run a one-time test against separate hall and seating PDFs')
+ p.add_argument('--register',help='Register number for --test-allotment (does not change .env)')
+ p.add_argument('--date',help='Exam date for --test-allotment in YYYY-MM-DD format')
+ p.add_argument('--session',choices=['FN','AN'],help='Exam session for --test-allotment')
+ p.add_argument('--hall-url',help='Official hall-allotment PDF URL')
+ p.add_argument('--seating-url',help='Official seating-allotment PDF URL')
+ p.add_argument('--send-test-result-email',action='store_true',help='Send the one-time test report to NOTIFICATION_EMAIL')
  args=p.parse_args(); configure_logging(); db=Database(settings.database_path); db.initialize()
  if args.test_email:
   from vsb_watch.notifications import send_test_email
   send_test_email(); print('Test email sent.'); return 0
+ if args.test_allotment:
+  required = {'--register':args.register,'--date':args.date,'--session':args.session,'--hall-url':args.hall_url,'--seating-url':args.seating_url}
+  missing = [k for k,v in required.items() if not v]
+  if missing: p.error('--test-allotment requires ' + ', '.join(missing))
+  from vsb_watch.allotment.manual_test import run_manual_test
+  result = run_manual_test(args.register,args.date,args.session,args.hall_url,args.seating_url,args.send_test_result_email)
+  print('TEST RESULT')
+  for key in ('register_number','exam_date','session','hall_number','seat_number','hall_page','seating_page'):
+   print(f'{key}: {result[key]}')
+  print(f"Hall screenshot: {result['hall_screenshot']}")
+  print(f"Seating screenshot: {result['seating_screenshot']}")
+  print('Test email sent.' if args.send_test_result_email else 'Email not sent. Re-run with --send-test-result-email after verifying values.')
+  return 0
  if args.show_schedule:
   from vsb_watch.schedule import schedule_as_dict
   import json; print(json.dumps(schedule_as_dict(),indent=2)); return 0

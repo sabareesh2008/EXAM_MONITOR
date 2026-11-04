@@ -6,6 +6,10 @@ from vsb_watch.config import settings
 from vsb_watch.database import Database
 
 def send_allotment_email(db: Database, event_key: str, allotment: dict, pdf_path: Path, evidence_path: Path | None = None) -> bool:
+    # Never notify on an unvalidated/unknown seat; arbitrary text fragments are not seats.
+    seat_value = str(allotment.get('seat_number', ''))
+    if not seat_value.isdigit() or not 1 <= int(seat_value) <= 200:
+        return False
     recipient=settings.notification_email
     if not (recipient and settings.smtp_user and settings.smtp_password): return False
     hall=allotment.get('hall_number') or 'Not explicitly identified in PDF'

@@ -87,24 +87,137 @@ def extract_pdf_metadata(pdf_path: Path, ocr_fallback: bool = True) -> dict[str,
             'register_numbers_found': len(regs), 'register_numbers': regs,
             'text_extractable': bool(full.strip()), 'text': full}
 
+def _page_hall_number(page_text: str) -> str | None:
+    labelled = HALL_RE.search(page_text)
+    if labelled:
+        return re.sub(r'\s+', ' ', labelled.group(1)).strip()
+    # VSB seating PDFs commonly print a room heading such as "EXAM HALL : MB III 101".
+    m = re.search(r'\bMB\s+(?:I{1,3}|IV|V)\s+[A-Z]?\s*\d{2,4}[A-Z]?\b', page_text, re.I)
+    return re.sub(r'\s+', ' ', m.group(0)).strip() if m else None
+
+def _rectangles(page) -> list[fitz.Rect]:
+    """Return actual rectangular outlines drawn in the PDF page."""
+    found = []
+    for drawing in page.get_drawings():
+        for item in drawing.get("items", []):
+            if item[0] == "re":
+                rect = fitz.Rect(item[1])
+                if rect.width >= 8 and rect.height >= 8:
+                    found.append(rect)
+    # De-duplicate coincident rectangle paths.
+    unique = []
+    for rect in found:
+        if not any(abs(rect.x0-r.x0)<1 and abs(rect.y0-r.y0)<1 and
+                   abs(rect.x1-r.x1)<1 and abs(rect.y1-r.y1)<1 for r in unique):
+            unique.append(rect)
+    return unique
+
+
+def _inside(word, rect, pad=1.5) -> bool:
+    x0, y0, x1, y1 = word[:4]
+    return (x0 >= rect.x0-pad and y0 >= rect.y0-pad and
+            x1 <= rect.x1+pad and y1 <= rect.y1+pad)
+
+
+def _find_seat_from_words(page, target: str) -> dict[str, Any] | None:
+    """Resolve seat only from the numeric left cell adjacent to the register cell."""
+    words = page.get_text("words")
+    rects = _rectangles(page)
+    target_words = [w for w in words if w[4].strip() == target]
+    candidates = []
+    for tw in target_words:
+        target_rects = [r for r in rects if _inside(tw, r)]
+        for target_rect in target_rects:
+            left_cells = []
+            for r in rects:
+                overlap = max(0, min(r.y1, target_rect.y1)-max(r.y0, target_rect.y0))
+                ratio = overlap / max(1, min(r.height, target_rect.height))
+                if (r.x1 <= target_rect.x0 + 2 and
+                    target_rect.x0-r.x1 <= max(4, target_rect.height*0.25) and
+                    ratio >= 0.65 and 0.55 <= r.height/target_rect.height <= 1.8):
+                    left_cells.append(r)
+            if not left_cells:
+                continue
+            # The immediately adjacent cell is the one with the greatest right edge.
+            nearest_edge = max(r.x1 for r in left_cells)
+            nearest = [r for r in left_cells if abs(r.x1-nearest_edge) < 0.75]
+            if len(nearest) != 1:
+                continue
+            left = nearest[0]
+            cell_words = [w for w in words if _inside(w, left)]
+            numeric = [w for w in cell_words if re.fullmatch(r"\d{1,3}", w[4].strip())]
+            # Require exactly one numeric value in the seat cell.
+            valid = [w for w in numeric if 1 <= int(w[4]) <= 200]
+            if len(valid) == 1 and len(numeric) == 1:
+                seat_word = valid[0]
+                candidates.append({
+                    "seat_number": seat_word[4].strip(),
+                    "register_rect": tuple(target_rect),
+                    "seat_rect": tuple(left),
+                    "register_rect_obj": target_rect,
+                    "seat_rect_obj": left,
+                })
+    # Multiple distinct box-pairs are ambiguous, never choose the first.
+    unique = {}
+    for c in candidates:
+        key = (c["seat_number"], tuple(round(x, 1) for x in c["register_rect"]))
+        unique[key] = c
+    return next(iter(unique.values())) if len(unique) == 1 else None
+
+
 def extract_student_allotment(pdf_path: Path, register_number: str) -> dict[str, Any] | None:
-    target = re.sub(r'\s+', '', register_number)
-    if not target or not target.isdigit(): raise ValueError('Register number must contain digits only')
+    """Find a register number across all pages; seating-chart seats require adjacent boxes."""
+    target = re.sub(r"\s+", "", register_number)
+    if not target or not target.isdigit():
+        raise ValueError("Register number must contain digits only")
+    matches = []
     with fitz.open(pdf_path) as doc:
         for pi, page in enumerate(doc):
-            text = page.get_text('text', sort=True)
-            compact = re.sub(r'\s+', '', text)
-            if not re.search(r'(?<!\d)' + re.escape(target) + r'(?!\d)', compact): continue
+            words = page.get_text("words")
+            # Exact whole-word match only. No digit-stripping of arbitrary text fragments.
+            target_words = [w for w in words if w[4].strip() == target]
+            text = page.get_text("text", sort=True)
+            if not target_words and not re.search(r"(?<!\d)" + re.escape(target) + r"(?!\d)", text):
+                continue
+            hall = _page_hall_number(text)
+            if not hall:
+                rooms = re.findall(r"\bMB\s+(?:I{1,3}|IV|V)\s+[A-Z]?\s*\d{2,4}[A-Z]?\b", text, re.I)
+                unique_rooms = {re.sub(r"\s+", " ", x).strip().upper() for x in rooms}
+                if len(unique_rooms) == 1:
+                    hall = next(iter(unique_rooms))
             lines = [x.strip() for x in text.splitlines() if x.strip()]
-            idx = next((i for i, line in enumerate(lines) if target in re.sub(r'\s+', '', line)), -1)
-            window = ' | '.join(lines[max(0, idx-5):min(len(lines), idx+6)]) if idx >= 0 else text
-            hall = HALL_RE.search(window); seat = SEAT_RE.search(window)
-            return {'register_number': target, 'page': pi+1,
-                    'hall_number': hall.group(1).strip() if hall else None,
-                    'seat_number': seat.group(1).strip() if seat else None,
-                    'context': window[:1200],
-                    'extraction_confidence': 'high' if hall or seat else 'register-only'}
-    return None
+            idx = next((i for i, line in enumerate(lines) if target in re.sub(r"\s+", "", line)), -1)
+            window = " | ".join(lines[max(0, idx-8):min(len(lines), idx+9)]) if idx >= 0 else text[:1600]
+            box = _find_seat_from_words(page, target) if target_words else None
+            labelled = SEAT_RE.search(window)
+            # Label-based seat values are retained only for conventional hall-list documents,
+            # never used to interpret arbitrary seating-chart fragments.
+            seat = None
+            if labelled and ("SEAT" in labelled.group(0).upper() or "BENCH" in labelled.group(0).upper()):
+                value = labelled.group(1).strip()
+                if re.fullmatch(r"(?:[A-Z]-?)?\d{1,3}", value, re.I):
+                    seat = value
+            if box:
+                seat = box["seat_number"]
+            matches.append({
+                "register_number": target, "page": pi+1, "hall_number": hall,
+                "seat_number": seat or "UNKNOWN", "seat_warning": None if seat else
+                "No unique numeric seat box was found immediately left of the register box",
+                "context": window[:1600],
+                "seat_rect": box["seat_rect"] if box else None,
+                "register_rect": box["register_rect"] if box else None,
+                "extraction_confidence": "high" if hall and seat else ("partial" if hall or seat else "register-only")
+            })
+    if not matches:
+        return None
+    if len(matches) > 1:
+        first = matches[0].copy()
+        first.update({"seat_number": "UNKNOWN",
+                      "seat_warning": f"Register number occurs on {len(matches)} pages; page assignment is ambiguous",
+                      "page": None, "hall_number": None, "seat_rect": None, "register_rect": None,
+                      "extraction_confidence": "ambiguous"})
+        return first
+    return matches[0]
 
 def search_register_in_pdf(pdf_path: Path, register_number: str) -> list[dict[str, Any]]:
     result = extract_student_allotment(pdf_path, register_number)

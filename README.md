@@ -161,11 +161,39 @@ Run `start.bat` or `python main.py --dashboard`. The background monitor repeats 
 
 Back up your existing `data/` folder and `.env` before replacing project files. Keep the existing `.env` and do not overwrite it with `.env.example`.
 
+## One-time test with a different register number (V2.2)
 
-## Free cloud monitoring with GitHub Actions
+VSB publishes two separate PDFs for the same date/session:
 
-This repository includes `.github/workflows/vsb-exam-watch.yml`. Push the project to a **private GitHub repository**, enable Actions, configure the repository secrets and variables listed in `.github/SECRETS_SETUP.md`, and keep the workflow on the default branch. It runs approximately every 30 minutes and can also be started manually from the Actions tab.
+- **Hall allotment**: maps a register number to the examination hall.
+- **Seating allotment**: maps a register number to an individual seat number and page.
 
-The workflow stores its SQLite history at `data/state/vsb_exam_watch.sqlite3` and commits that file after each run, so previously seen PDFs and sent-alert records persist between GitHub-hosted runners. Downloaded PDFs, screenshots and logs are temporary. GitHub scheduled runs can be delayed and are not a guaranteed real-time service.
+Use this one-time test to verify both PDFs, page screenshots and email delivery without changing `REGISTER_NUMBER` in `.env` or altering your normal exam schedule.
 
-Before relying on notifications, confirm the six configured exam dates and FN/AN sessions in `vsb_watch/schedule.py` against the official timetable. The current schedule treats both FN and AN as watched sessions on each configured date; change this if the actual timetable differs.
+Example for the 05 Nov 2026 FN PDFs shown in the VSB COE page:
+
+```bat
+python main.py --test-allotment ^
+  --register 922524103002 ^
+  --date 2026-11-05 ^
+  --session FN ^
+  --hall-url "https://vsbec.edu.in/wp-content/uploads/2026/11/05.11.26-HALL-FN.pdf" ^
+  --seating-url "https://vsbec.edu.in/wp-content/uploads/2026/11/05.11.26-SEATING-FN.pdf"
+```
+
+The first run downloads both PDFs, finds the register number, extracts the hall and seat, and creates highlighted PNG evidence. It **does not send an email**. Review the printed values first. If they are correct, run the same command again and append:
+
+```bat
+  --send-test-result-email
+```
+
+The test report goes to `NOTIFICATION_EMAIL` using the SMTP settings already in `.env`. It attaches both original PDFs and both matching-page screenshots. The test register number is passed on the command line only and does not replace your personal `.env` register number. If either hall or seat cannot be extracted confidently, the command stops and does not send an incomplete email.
+
+The parser uses text positions from the PDF: for VSB seating charts, the seat number is read from the numbered cell immediately to the left of the matched register number. Always compare the result and attached evidence with the official PDFs before relying on notifications. If VSB changes its PDF layout, update and test the parser before using it.
+
+
+## V2.2.1 seating-box validation update
+
+The seating parser now uses PyMuPDF word coordinates plus drawn rectangle geometry. A seat is accepted only from the numeric left-hand rectangle immediately adjacent to the exact register-number rectangle (range 1–200). It scans every PDF page; duplicate page matches, missing boxes, partial words (including `ING`), and ambiguous cell geometry produce `UNKNOWN`. The one-time test command refuses to email unless the seat is numeric, page-specific evidence exists, and both PDFs' printed date/session match the requested values. The test email attaches both original PDFs and both screenshots. The routine monitoring email path also blocks unknown/non-numeric seats.
+
+The included automated suite uses synthetic PDFs and verifies the geometry and safety rules. **The November 5, 2026 VSB source PDFs were not included in the supplied ZIP and could not be reached from the build environment**, so the synthetic tests are not a substitute for the required live-PDF confirmation. Run the manual command below on a Windows machine with internet access and inspect both screenshots before relying on the result.
