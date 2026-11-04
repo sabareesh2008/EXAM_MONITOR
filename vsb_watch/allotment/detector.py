@@ -16,3 +16,10 @@ def is_allotment_candidate(url: str, label: str = "") -> bool:
     raw = unquote(f"{parsed.path} {parsed.query} {label}").lower()
     normalized = raw.replace("_", " ").replace("-", " ")
     return any(k.replace("_", " ").replace("-", " ") in normalized for k in KEYWORDS)
+
+def is_allotment_filename(filename: str) -> bool:
+    normalized = filename.lower().replace("_", " ").replace("-", " ")
+    if "internship" in normalized or "project" in normalized or "calendar" in normalized:
+        return False
+    words = ("hall", "seating", "allotment", "allocation")
+    return any(w in normalized for w in words)

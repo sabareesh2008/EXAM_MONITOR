@@ -1,10 +1,64 @@
-# VSB Exam Watch V2 — Personal Allotment Monitoring System
+# VSB Exam Watch V2.3 — Automatic Student Examination Allotment Portal
 
-A personal, 24/7 monitoring application for the **V.S.B. Engineering College, Karur** Controller of Examinations website. It discovers hall-allotment PDF links from the official COE page, college homepage and COE portal, WordPress media search and available XML sitemaps; downloads new/changed PDFs; extracts metadata; searches the configured register number; creates page-image evidence; sends email alerts; and provides a protected web dashboard.
+An automated Controller of Examinations monitoring and student examination allotment system for **V.S.B. Engineering College, Karur**. 
+
+### What's New in V2.3: Automatic Student Examination Allotment Portal
+- **Zero-Friction Search Portal**: Any student enters **only their Register Number** to view all their allotted exams across published dates.
+- **Support for Regular & Arrear Exams**: Automatically surfaces all matching exam dates, including students taking multiple FN and AN examinations on the same day.
+- **Serverless Architecture**: 
+  - **GitHub Pages Portal** (`docs/` and `portal/`) for high-speed, mobile-responsive student lookup.
+  - **Supabase Cloud Sync**: All published exam allotments are ingested and synced to Supabase PostgreSQL with Row Level Security (RLS).
+  - **Zero hosting costs**: Entire stack runs on GitHub Actions cron + Supabase + GitHub Pages.
+- **Intelligent PDF Ingestion**: Extracts all student registers, hall numbers, seat numbers, subject codes, and subject names from both Hall Allotment and Seating Chart PDFs.
+- **Backward Compatible**: Preserves existing V2.2.1 personal single-student email alerting, CLI testing tools (`--test-allotment`), and local SQLite database.
 
 **Official source:** https://vsbec.edu.in/controller-of-examination/  
 **COE portal:** https://coe.vsbec.edu.in/  
-The college's COE page describes the office's responsibility for exam hall arrangements. A real May 2026 hall-allotment PDF was also located and provides an example of the department-wise format. The November 2026 documents and all extraction patterns still need live validation when published.
+
+---
+
+## Student Search Portal (GitHub Pages)
+
+The public search portal is located in `docs/` and `portal/index.html`.
+- Deploy it instantly by enabling **GitHub Pages** from the repository settings (`Settings -> Pages -> Deploy from branch: main -> /docs`).
+- Students enter their register number and immediately receive clean visual cards with:
+  - **Exam Date & Day of Week**
+  - **Session (FN 09:30 AM / AN 01:30 PM)**
+  - **Subject Code & Subject Title**
+  - **Exam Hall / Room Number**
+  - **Allocated Seat Number**
+  - **Printable Slip option**
+- If no records are found, a clear **Not Allotted / Not Yet Published** notice is displayed.
+
+---
+
+## Supabase Database Setup
+
+1. Create a free project at [supabase.com](https://supabase.com).
+2. Go to the **SQL Editor** in Supabase and run the script in [`supabase_schema.sql`](supabase_schema.sql).
+3. Copy your **Project URL** and **API Keys** (`anon` and `service_role`).
+4. Set them in GitHub Secrets or `.env`:
+   - `SUPABASE_URL=https://your-project.supabase.co`
+   - `SUPABASE_KEY=your-supabase-service-role-or-anon-key`
+   - `SUPABASE_TABLE=allotments`
+
+---
+
+## CLI Usage (V2.3)
+
+```bash
+# Search any student's published allotments directly from terminal:
+python main.py --search-allotment 922524103002
+
+# Ingest all downloaded PDFs into local SQLite and Supabase:
+python main.py --ingest-all
+
+# Run one monitoring cycle (discovers new PDFs, extracts, and syncs):
+python main.py --once
+
+# Start web dashboard:
+python main.py --dashboard
+```
 
 ## Features
 

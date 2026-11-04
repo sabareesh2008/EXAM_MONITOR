@@ -29,4 +29,8 @@ class Settings:
     download_dir: Path = _path('DOWNLOAD_DIR', 'data/downloads')
     evidence_dir: Path = _path('EVIDENCE_DIR', 'data/evidence')
     log_dir: Path = _path('LOG_DIR', 'data/logs')
+    supabase_url: str = os.getenv('SUPABASE_URL', '').rstrip('/')
+    supabase_key: str = os.getenv('SUPABASE_KEY', '')
+    supabase_table: str = os.getenv('SUPABASE_TABLE', 'allotments')
+    allow_all_exam_dates: bool = os.getenv('ALLOW_ALL_EXAM_DATES', 'true').lower() in ('true', '1', 'yes')
 settings = Settings()

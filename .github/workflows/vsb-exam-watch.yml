@@ -48,6 +48,10 @@ jobs:
           SMTP_PORT: ${{ vars.SMTP_PORT || '587' }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          SUPABASE_TABLE: ${{ vars.SUPABASE_TABLE || 'allotments' }}
+          ALLOW_ALL_EXAM_DATES: 'true'
           DATABASE_PATH: data/state/vsb_exam_watch.sqlite3
           POLL_INTERVAL_MINUTES: '30'
           PYTHONUNBUFFERED: '1'
@@ -65,15 +69,15 @@ jobs:
           PY
           fi
 
-      - name: Save monitoring history for the next run
+      - name: Save monitoring history and student portal data
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/state/vsb_exam_watch.sqlite3 data/state/.gitkeep
+          git add data/state/vsb_exam_watch.sqlite3 data/state/.gitkeep docs/ portal/
           if ! git diff --cached --quiet; then
-            git commit -m "Update VSB Exam Watch state [skip ci]"
+            git commit -m "Update VSB Exam Watch state and student allotments [skip ci]"
             git push
           else
-            echo 'No database changes to save.'
+            echo 'No database or portal changes to save.'
           fi

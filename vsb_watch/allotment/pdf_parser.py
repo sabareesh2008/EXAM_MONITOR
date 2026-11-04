@@ -222,3 +222,172 @@ def extract_student_allotment(pdf_path: Path, register_number: str) -> dict[str,
 def search_register_in_pdf(pdf_path: Path, register_number: str) -> list[dict[str, Any]]:
     result = extract_student_allotment(pdf_path, register_number)
     return [result] if result else []
+
+
+def extract_all_pdf_allotments(pdf_path: Path, source_url: str = "") -> list[dict[str, Any]]:
+    """
+    Extract all student allotment records from either a Hall-Allotment PDF
+    or a Room-Wise Seating-Allotment PDF.
+    Returns list of dicts: register_number, exam_date, session, hall_number, seat_number,
+    subject_code, subject_name, page, source_url.
+    """
+    meta = extract_pdf_metadata(pdf_path)
+    doc_type = meta.get("document_type", "unknown")
+    if doc_type == "unknown" and not meta.get("exam_date"):
+        return []
+
+    default_date = meta.get("exam_date") or ""
+    default_session = meta.get("session") or ""
+
+    records = []
+    hall_clean_re = re.compile(
+        r"\b(MB\s+(?:I{1,3}|IV|V)\s+[A-Z]?\s*\d{2,4}[A-Z]?|LH\s*[-]?\s*\d+|LAB\s*[-]?\s*\d+)", re.I
+    )
+    subj_re = re.compile(r"\[([A-Z0-9]+)\]\s*([^0-9\n\r]+)", re.I)
+    date_re = re.compile(r"DATE\s+OF\s+EXAM(?:INATION)?\s*[:=-]?\s*(\d{1,2}[-/.]\d{1,2}[-/.]\d{2,4})", re.I)
+    sess_re = re.compile(r"SESSION\s*[:=-]?\s*(FN|AN)", re.I)
+    reg_clean_re = re.compile(r"(?<!\d)\d{9,15}(?!\d)")
+
+    with fitz.open(pdf_path) as doc:
+        for pi, page in enumerate(doc):
+            text = page.get_text("text", sort=True)
+            p_date = default_date
+            p_sess = default_session
+
+            d_m = date_re.search(text)
+            if d_m:
+                parts = re.split(r"[-/.]", d_m.group(1))
+                if len(parts) == 3:
+                    d, m, y = map(int, parts)
+                    if y < 100: y += 2000 if y < 70 else 1900
+                    p_date = f"{y:04d}-{m:02d}-{d:02d}"
+
+            s_m = sess_re.search(text)
+            if s_m:
+                p_sess = s_m.group(1).upper()
+
+            page_hall = _page_hall_number(text)
+            tables = page.find_tables()
+
+            if doc_type == "department-wise" or "LIST OF STUDENTS REGISTERED" in text.upper():
+                # Hall Allotment (Department / Programme list)
+                curr_subj_code = ""
+                curr_subj_name = ""
+                extracted_before = len(records)
+                for t in tables.tables:
+                    df = t.extract()
+                    if not df:
+                        continue
+                    for row in df:
+                        row_str = " ".join(str(c) for c in row if c)
+                        sm = subj_re.search(row_str)
+                        if sm:
+                            curr_subj_code = sm.group(1).strip()
+                            curr_subj_name = sm.group(2).strip()
+                        hm = hall_clean_re.search(row_str)
+                        hall = hm.group(1).strip() if hm else page_hall
+                        regs = reg_clean_re.findall(row_str)
+                        for reg in regs:
+                            records.append({
+                                "register_number": reg,
+                                "exam_date": p_date,
+                                "session": p_sess,
+                                "hall_number": hall or "Check Hall",
+                                "seat_number": "Check Hall",
+                                "subject_code": curr_subj_code,
+                                "subject_name": curr_subj_name,
+                                "page": pi + 1,
+                                "confidence": "high" if hall else "partial",
+                                "source_url": source_url,
+                            })
+                # Fallback to direct text stream parsing if no vector tables were detected on this page
+                if len(records) == extracted_before:
+                    curr_hall = page_hall
+                    for line in text.splitlines():
+                        line = line.strip()
+                        if not line:
+                            continue
+                        sm = subj_re.search(line)
+                        if sm:
+                            curr_subj_code = sm.group(1).strip()
+                            curr_subj_name = sm.group(2).strip()
+                        hm = hall_clean_re.search(line)
+                        if hm:
+                            curr_hall = hm.group(1).strip()
+                        regs = reg_clean_re.findall(line)
+                        for reg in regs:
+                            records.append({
+                                "register_number": reg,
+                                "exam_date": p_date,
+                                "session": p_sess,
+                                "hall_number": curr_hall or "Check Hall",
+                                "seat_number": "Check Hall",
+                                "subject_code": curr_subj_code,
+                                "subject_name": curr_subj_name,
+                                "page": pi + 1,
+                                "confidence": "high" if curr_hall else "partial",
+                                "source_url": source_url,
+                            })
+            else:
+                # Seating Allotment (Room-wise seating chart)
+                seat_map = {}
+                subject_map = {}
+                for t in tables.tables:
+                    df = t.extract()
+                    if not df:
+                        continue
+                    if len(df[0]) == 2:
+                        for r in df:
+                            s, reg = r[0], r[1]
+                            if (s and reg and re.fullmatch(r"\d{1,3}", str(s).strip())
+                                    and re.fullmatch(r"\d{9,15}", str(reg).strip())):
+                                seat_map[str(reg).strip()] = str(s).strip()
+                    if len(df[0]) >= 3 and any("CODE" in str(c) for c in df[0]):
+                        for r in df[1:]:
+                            if len(r) >= 4 and r[0] and r[1]:
+                                code = str(r[0]).strip()
+                                title = str(r[1]).strip()
+                                reg_list_str = str(r[3])
+                                for reg in reg_clean_re.findall(reg_list_str):
+                                    subject_map[reg] = (code, title)
+
+                # Fallback to word-box geometry for any unmapped register numbers on the page
+                page_regs = set(reg_clean_re.findall(text))
+                for reg in page_regs:
+                    if reg not in seat_map:
+                        box = _find_seat_from_words(page, reg)
+                        if box:
+                            seat_map[reg] = box["seat_number"]
+
+                for reg, seat in seat_map.items():
+                    sub_code, sub_title = subject_map.get(reg, ("", ""))
+                    records.append({
+                        "register_number": reg,
+                        "exam_date": p_date,
+                        "session": p_sess,
+                        "hall_number": page_hall or "Check Hall",
+                        "seat_number": seat,
+                        "subject_code": sub_code,
+                        "subject_name": sub_title,
+                        "page": pi + 1,
+                        "confidence": "high" if page_hall and seat else "partial",
+                        "source_url": source_url,
+                    })
+
+    # Deduplicate within same PDF run
+    unique_records = {}
+    for r in records:
+        key = (r["register_number"], r["exam_date"], r["session"], r.get("subject_code", ""))
+        if key not in unique_records:
+            unique_records[key] = r
+        else:
+            # Merge seat or subject if previously missing
+            existing = unique_records[key]
+            if existing.get("seat_number") in ("Check Hall", "UNKNOWN", "") and r.get("seat_number") not in ("Check Hall", "UNKNOWN", ""):
+                existing["seat_number"] = r["seat_number"]
+            if not existing.get("subject_name") and r.get("subject_name"):
+                existing["subject_name"] = r["subject_name"]
+            if not existing.get("subject_code") and r.get("subject_code"):
+                existing["subject_code"] = r["subject_code"]
+    return list(unique_records.values())
+

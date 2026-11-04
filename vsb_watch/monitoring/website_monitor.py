@@ -8,11 +8,12 @@ from bs4 import BeautifulSoup
 from xml.etree import ElementTree
 import fitz
 from vsb_watch.allotment.detector import is_allotment_candidate
-from vsb_watch.allotment.pdf_parser import extract_pdf_metadata,extract_student_allotment
+from vsb_watch.allotment.pdf_parser import extract_pdf_metadata, extract_student_allotment, extract_all_pdf_allotments
 from vsb_watch.config import settings
 from vsb_watch.database import Database
 from vsb_watch.notifications import send_allotment_email
 from vsb_watch.schedule import is_scheduled_exam
+from vsb_watch.supabase_client import supabase_client
 logger=logging.getLogger(__name__)
 
 class WebsiteMonitor:
@@ -120,8 +121,22 @@ class WebsiteMonitor:
      'extraction_json':json.dumps({k:v for k,v in metadata.items() if k!='text'},ensure_ascii=False)})
     if existing: changed+=1
     else: new+=1
-    # Only process personal register-number matches for the six configured dates and FN/AN.
-    if not is_scheduled_exam(metadata.get('exam_date'), metadata.get('session')):
+
+    # Extract and store all published allotments in bulk (VSB Exam Watch V2.3)
+    try:
+     all_allotments = extract_all_pdf_allotments(path, source_url=url)
+     if all_allotments:
+      saved_count = self.database.save_bulk_allotments(doc_id, all_allotments)
+      logger.info('Extracted %d allotment records from %s into local DB', saved_count, filename)
+      if supabase_client.is_configured():
+       sb_res = supabase_client.upsert_allotments(all_allotments)
+       logger.info('Supabase synced %d records (%d errors) for %s', sb_res.get('upserted', 0), sb_res.get('errors', 0), filename)
+    except Exception:
+     logger.exception('Bulk allotment extraction failed for %s', filename)
+
+    # Date eligibility check (V2.3 defaults to allowing all valid exam dates; legacy filter if disabled)
+    is_target_date = is_scheduled_exam(metadata.get('exam_date'), metadata.get('session'))
+    if not settings.allow_all_exam_dates and not is_target_date:
      skipped+=1
      logger.info('Ignored non-target/uncertain exam PDF: %s (date=%s, session=%s)', filename, metadata.get('exam_date'), metadata.get('session'))
      logger.info('Saved %s (%s)',filename,label)
@@ -145,4 +160,8 @@ class WebsiteMonitor:
    except Exception:
     errors+=1
     logger.exception('Could not process candidate %s',url)
+  if new > 0 or changed > 0:
+   from vsb_watch.config import ROOT_DIR
+   self.database.export_allotments_data(ROOT_DIR / 'portal/allotments.json', ROOT_DIR / 'portal/allotments.js', current_only=True)
+   self.database.export_allotments_data(ROOT_DIR / 'docs/allotments.json', ROOT_DIR / 'docs/allotments.js', current_only=True)
   return {'candidates':len(candidates),'new':new,'changed':changed,'eligible_target_pdfs':eligible,'ignored_non_target_pdfs':skipped,'matches':matches,'errors':errors}

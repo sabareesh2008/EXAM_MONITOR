@@ -3,5 +3,10 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
-data/*
+data/downloads/
+data/evidence/
+data/logs/
+data/vsb_exam_watch.sqlite3*
 !data/.gitkeep
+!data/state/
+!data/state/**

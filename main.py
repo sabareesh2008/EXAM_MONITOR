@@ -21,6 +21,9 @@ def main():
  p.add_argument('--once',action='store_true',help='Run one monitoring cycle')
  p.add_argument('--dashboard',action='store_true',help='Start dashboard and background monitoring')
  p.add_argument('--search-register',help='Search already downloaded PDFs for a register number')
+ p.add_argument('--search-allotment',help='Search published examination allotments for a register number (V2.3)')
+ p.add_argument('--all-history',action='store_true',help='Include past examination history (default is current published only)')
+ p.add_argument('--ingest-all',action='store_true',help='Parse all downloaded PDFs and ingest allotments into database and Supabase')
  p.add_argument('--show-schedule',action='store_true')
  p.add_argument('--test-email',action='store_true',help='Send a test notification email using .env settings')
  p.add_argument('--test-allotment',action='store_true',help='Run a one-time test against separate hall and seating PDFs')
@@ -56,6 +59,51 @@ def main():
   for f in settings.download_dir.glob('*.pdf'):
    for item in search_register_in_pdf(f,args.search_register): found=True; print(f"{f.name}: page {item['page']} | hall={item['hall_number']} | seat={item['seat_number']} | {item['extraction_confidence']}")
   if not found: print('No match found in downloaded PDFs.')
+  return 0
+ if args.search_allotment:
+  from vsb_watch.supabase_client import supabase_client
+  reg = args.search_allotment.strip()
+  current_only = not args.all_history
+  records = db.find_allotments_by_register(reg, current_only=current_only)
+  if not records and supabase_client.is_configured():
+   records = supabase_client.search_allotments(reg, current_only=current_only)
+  if not records:
+   label = "currently published / upcoming" if current_only else "published"
+   print(f"Not Allotted: No {label} examination allotment found for register number '{reg}'.")
+   return 0
+  hdr = "CURRENT PUBLISHED EXAMINATION ALLOTMENT" if current_only else "EXAMINATION ALLOTMENT HISTORY"
+  print(f"=== {hdr} FOR REGISTER: {reg} ({len(records)} EXAM(S)) ===")
+  for idx, r in enumerate(records, 1):
+   print(f"\n[Exam {idx}] Date: {r.get('exam_date')} | Session: {r.get('session')}")
+   print(f"  Subject : [{r.get('subject_code') or '-'}] {r.get('subject_name') or 'Theory Examination'}")
+   print(f"  Hall No : {r.get('hall_number') or 'Check Hall'}")
+   print(f"  Seat No : {r.get('seat_number') or 'Check Hall Display'}")
+   if r.get('page') or r.get('page_number'):
+    print(f"  PDF Page: {r.get('page') or r.get('page_number')}")
+  return 0
+ if args.ingest_all:
+  from vsb_watch.allotment.pdf_parser import extract_all_pdf_allotments
+  from vsb_watch.allotment.detector import is_allotment_filename
+  from vsb_watch.supabase_client import supabase_client
+  total_ingested = 0
+  pdf_files = [f for f in settings.download_dir.glob('*.pdf') if is_allotment_filename(f.name)]
+  print(f"Found {len(pdf_files)} candidate exam allotment PDF(s) to process in {settings.download_dir}...")
+  for f in pdf_files:
+   try:
+    records = extract_all_pdf_allotments(f)
+    if records:
+     count = db.save_bulk_allotments(None, records)
+     total_ingested += count
+     print(f"  Ingested {count} records from {f.name}")
+     if supabase_client.is_configured():
+      sb_res = supabase_client.upsert_allotments(records)
+      print(f"    Supabase synced {sb_res.get('upserted', 0)} records")
+   except Exception as exc:
+    print(f"  Error processing {f.name}: {exc}")
+  print(f"Total allotment records ingested: {total_ingested}")
+  from vsb_watch.config import ROOT_DIR
+  db.export_allotments_data(ROOT_DIR / 'portal/allotments.json', ROOT_DIR / 'portal/allotments.js', current_only=True)
+  db.export_allotments_data(ROOT_DIR / 'docs/allotments.json', ROOT_DIR / 'docs/allotments.js', current_only=True)
   return 0
  if args.once: print(WebsiteMonitor(db).run_once()); return 0
  if args.dashboard:
