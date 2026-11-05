@@ -17,11 +17,15 @@ CREATE TABLE IF NOT EXISTS public.allotments (
     seat_number TEXT DEFAULT 'Check Hall',
     page_number INTEGER,
     source_pdf_url TEXT,
+    seating_image TEXT DEFAULT '',
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW(),
     -- Unique constraint for deduplication on upsert
     CONSTRAINT uq_allotment UNIQUE (register_number, exam_date, session, subject_code)
 );
+
+-- Ensure seating_image column exists if table was already created
+ALTER TABLE public.allotments ADD COLUMN IF NOT EXISTS seating_image TEXT DEFAULT '';
 
 -- 2. Indexes for Ultra-Fast Search Queries
 CREATE INDEX IF NOT EXISTS idx_allotments_register_number ON public.allotments(register_number);

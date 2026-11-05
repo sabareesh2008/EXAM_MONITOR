@@ -26,6 +26,8 @@ class Database:
                 c.execute('ALTER TABLE allotments ADD COLUMN subject_name TEXT')
             if 'source_url' not in cols:
                 c.execute('ALTER TABLE allotments ADD COLUMN source_url TEXT')
+            if 'seating_image' not in cols:
+                c.execute('ALTER TABLE allotments ADD COLUMN seating_image TEXT')
     def record_check(self,at,url,status,detail=''):
         with self.connect() as c: c.execute('INSERT INTO checks(checked_at,page_url,status,detail) VALUES(?,?,?,?)',(at,url,status,detail))
     def get_document(self,url):
@@ -54,8 +56,8 @@ class Database:
                     continue
                 doc_id = document_id or rec.get('document_id')
                 c.execute('''
-                INSERT INTO allotments(document_id,register_number,exam_date,session,hall_number,seat_number,page,confidence,context,subject_code,subject_name,source_url,created_at)
-                VALUES(?,?,?,?,?,?,?,?,?,?,?,?,datetime('now'))
+                INSERT INTO allotments(document_id,register_number,exam_date,session,hall_number,seat_number,page,confidence,context,subject_code,subject_name,source_url,seating_image,created_at)
+                VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,datetime('now'))
                 ON CONFLICT(document_id,register_number) DO UPDATE SET
                     exam_date=COALESCE(excluded.exam_date, allotments.exam_date),
                     session=COALESCE(excluded.session, allotments.session),
@@ -66,12 +68,14 @@ class Database:
                     context=COALESCE(excluded.context, allotments.context),
                     subject_code=CASE WHEN excluded.subject_code NOT IN ('', NULL) THEN excluded.subject_code ELSE allotments.subject_code END,
                     subject_name=CASE WHEN excluded.subject_name NOT IN ('', NULL) THEN excluded.subject_name ELSE allotments.subject_name END,
-                    source_url=COALESCE(excluded.source_url, allotments.source_url)
+                    source_url=COALESCE(excluded.source_url, allotments.source_url),
+                    seating_image=CASE WHEN excluded.seating_image NOT IN ('', NULL) THEN excluded.seating_image ELSE allotments.seating_image END
                 ''', (
                     doc_id, reg, rec.get('exam_date'), rec.get('session'),
                     rec.get('hall_number'), rec.get('seat_number', 'Check Hall'),
                     rec.get('page'), rec.get('confidence', 'batch'), rec.get('context', ''),
-                    rec.get('subject_code', ''), rec.get('subject_name', ''), rec.get('source_url', '')
+                    rec.get('subject_code', ''), rec.get('subject_name', ''), rec.get('source_url', ''),
+                    rec.get('seating_image', '')
                 ))
                 inserted += 1
         return inserted
@@ -95,6 +99,7 @@ class Database:
                     MAX(a.subject_name) as subject_name,
                     MIN(a.page) as page,
                     MAX(a.source_url) as source_url,
+                    MAX(a.seating_image) as seating_image,
                     MAX(d.filename) as filename,
                     MAX(d.url) as document_url
                 FROM allotments a
@@ -116,6 +121,7 @@ class Database:
                     MAX(a.subject_name) as subject_name,
                     MIN(a.page) as page,
                     MAX(a.source_url) as source_url,
+                    MAX(a.seating_image) as seating_image,
                     MAX(d.filename) as filename,
                     MAX(d.url) as document_url
                 FROM allotments a
@@ -151,7 +157,8 @@ class Database:
                     MAX(a.subject_code) as subject_code,
                     MAX(a.subject_name) as subject_name,
                     MIN(a.page) as page,
-                    MAX(a.source_url) as source_url
+                    MAX(a.source_url) as source_url,
+                    MAX(a.seating_image) as seating_image
                 FROM allotments a
                 WHERE a.exam_date >= ?
                 GROUP BY a.register_number, a.exam_date, a.session
@@ -168,7 +175,8 @@ class Database:
                     MAX(a.subject_code) as subject_code,
                     MAX(a.subject_name) as subject_name,
                     MIN(a.page) as page,
-                    MAX(a.source_url) as source_url
+                    MAX(a.source_url) as source_url,
+                    MAX(a.seating_image) as seating_image
                 FROM allotments a
                 GROUP BY a.register_number, a.exam_date, a.session
                 ORDER BY a.exam_date ASC, CASE WHEN a.session = 'FN' THEN 1 ELSE 2 END ASC

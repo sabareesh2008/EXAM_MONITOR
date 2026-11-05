@@ -80,6 +80,8 @@ def main():
    print(f"  Seat No : {r.get('seat_number') or 'Check Hall Display'}")
    if r.get('page') or r.get('page_number'):
     print(f"  PDF Page: {r.get('page') or r.get('page_number')}")
+   if r.get('seating_image'):
+    print(f"  Chart   : {r.get('seating_image')}")
   return 0
  if args.ingest_all:
   from vsb_watch.allotment.pdf_parser import extract_all_pdf_allotments

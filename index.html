@@ -425,6 +425,211 @@
       to { transform: rotate(360deg); }
     }
 
+    /* Seating Chart Evidence Box */
+    .seating-evidence-box {
+      margin-top: 16px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px;
+      padding: 14px 16px;
+      transition: border-color 0.2s ease;
+    }
+
+    .seating-evidence-box:hover {
+      border-color: rgba(59, 130, 246, 0.55);
+    }
+
+    .evidence-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .evidence-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #93c5fd;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-zoom {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #f1f5f9;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-zoom:hover {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    .evidence-preview-wrapper {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid #334155;
+      background: #020617;
+      max-height: 220px;
+    }
+
+    .evidence-preview-wrapper img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .evidence-preview-wrapper:hover img {
+      transform: scale(1.02);
+      filter: brightness(1.05);
+    }
+
+    .evidence-overlay-hint {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 6px 12px;
+      background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+      color: #e2e8f0;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    /* Modal for full screen seating preview */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 16px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      max-width: 960px;
+      width: 100%;
+      max-height: 94vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+      animation: modalIn 0.2s ease-out;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #0b1120;
+    }
+
+    .modal-header h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-btn {
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #cbd5e1;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .modal-btn:hover {
+      background: #334155;
+      color: #fff;
+    }
+
+    .modal-btn-close {
+      background: #ef4444;
+      border-color: #dc2626;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .modal-btn-close:hover {
+      background: #dc2626;
+    }
+
+    .modal-body {
+      padding: 14px;
+      overflow: auto;
+      text-align: center;
+      background: #020617;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-height: calc(94vh - 70px);
+    }
+
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+      display: block;
+    }
+
     footer {
       margin-top: 40px;
       text-align: center;
@@ -437,7 +642,7 @@
 
     @media print {
       body { background: white; color: black; padding: 0; }
-      .search-card, header .college-tag, .settings-toggle, .btn-print, footer { display: none !important; }
+      .search-card, header .college-tag, .settings-toggle, .btn-print, footer, .btn-zoom, .evidence-overlay-hint, .modal-overlay { display: none !important; }
       .exam-card { border: 1px solid #ccc; background: white; color: black; page-break-inside: avoid; }
       .exam-date, .subject-title, .grid-cell strong { color: black !important; }
       .allotment-grid { background: #f8fafc; border: 1px solid #ccc; }
@@ -501,12 +706,74 @@
       </div>
     </div>
 
+    <!-- Modal for viewing full Seating Allotment Page Image -->
+    <div id="seatingModal" class="modal-overlay" onclick="closeSeatingModal(event)">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h3 id="modalTitle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
+            Seating Arrangement Chart
+          </h3>
+          <div class="modal-actions">
+            <a id="modalNewTab" href="#" target="_blank" rel="noopener" class="modal-btn">Open Full Image ↗</a>
+            <button type="button" class="modal-btn modal-btn-close" onclick="closeSeatingModal()">✕ Close</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <img id="modalImg" src="" alt="Seating Allotment Chart" />
+        </div>
+      </div>
+    </div>
+
     <footer>
       Automated Examination Notice Watcher &copy; 2026 · Real-Time Allotment Portal
     </footer>
   </div>
 
   <script>
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function openSeatingModal(imgSrc, hall, seat) {
+      const modal = document.getElementById('seatingModal');
+      const img = document.getElementById('modalImg');
+      const title = document.getElementById('modalTitle');
+      const newTab = document.getElementById('modalNewTab');
+      if (!modal || !img) return;
+
+      img.src = imgSrc;
+      newTab.href = imgSrc;
+      title.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
+        Room Seating Chart · <span style="color:#60a5fa;margin-left:4px;">Hall ${escapeHtml(hall)} (Seat ${escapeHtml(seat)})</span>
+      `;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSeatingModal(e) {
+      if (e && e.target && e.target.closest('.modal-content') && !e.target.classList.contains('modal-btn-close')) {
+        return;
+      }
+      const modal = document.getElementById('seatingModal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSeatingModal();
+    });
+
     // Configuration storage
     const STORAGE_KEY = 'vsb_exam_watch_config';
     function getConfig() {
@@ -679,6 +946,25 @@
         const seat = item.seat_number && item.seat_number !== 'UNKNOWN' ? item.seat_number : 'Check Hall Display';
         const page = item.page || item.page_number;
 
+        const seatingHtml = item.seating_image ? `
+          <div class="seating-evidence-box">
+            <div class="evidence-header">
+              <span class="evidence-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M20.4 14.5L16 10 4 20"/></svg>
+                Room Seating Chart · Hall ${escapeHtml(hall)}
+              </span>
+              <button type="button" class="btn-zoom" onclick="openSeatingModal('${escapeHtml(item.seating_image)}', '${escapeHtml(hall)}', '${escapeHtml(seat)}')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Full Chart
+              </button>
+            </div>
+            <div class="evidence-preview-wrapper" onclick="openSeatingModal('${escapeHtml(item.seating_image)}', '${escapeHtml(hall)}', '${escapeHtml(seat)}')">
+              <img src="${escapeHtml(item.seating_image)}" alt="Seating chart for Hall ${escapeHtml(hall)} Seat ${escapeHtml(seat)}" loading="lazy" class="evidence-thumb" onerror="this.closest('.seating-evidence-box').style.display='none';" />
+              <div class="evidence-overlay-hint">🔍 Tap to inspect desk & seat layout</div>
+            </div>
+          </div>
+        ` : '';
+
         const card = document.createElement('div');
         card.className = `exam-card ${sessionClass}`;
         card.innerHTML = `
@@ -705,6 +991,8 @@
               <strong>${seat}</strong>
             </div>
           </div>
+
+          ${seatingHtml}
 
           <div class="card-meta">
             <span>Status: <strong style="color:#22c55e;">Confirmed</strong> · ${page ? `PDF Page ${page}` : 'COE Portal'}</span>

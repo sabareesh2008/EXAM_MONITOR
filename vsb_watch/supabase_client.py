@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 
 
 class SupabaseClient:
-    def __init__(self, url: str = "", key: str = "", table: str = ""):
-        self.url = (url or settings.supabase_url).rstrip("/")
-        self.key = key or settings.supabase_key
-        self.table = table or settings.supabase_table or "allotments"
+    def __init__(self, url: str | None = None, key: str | None = None, table: str | None = None):
+        self.url = (settings.supabase_url if url is None else url).rstrip("/")
+        self.key = settings.supabase_key if key is None else key
+        self.table = (settings.supabase_table or "allotments") if table is None else table
 
     def is_configured(self) -> bool:
         return bool(self.url and self.key)
@@ -59,6 +59,7 @@ class SupabaseClient:
                 "subject_name": r.get("subject_name", ""),
                 "page_number": r.get("page") or r.get("page_number"),
                 "source_pdf_url": r.get("source_url") or r.get("source_pdf_url", ""),
+                "seating_image": r.get("seating_image", ""),
             }
             cleaned.append(item)
 
@@ -74,6 +75,15 @@ class SupabaseClient:
                 )
                 if resp.status_code in (200, 201, 204):
                     total_upserted += len(chunk)
+                elif resp.status_code == 400 and "seating_image" in resp.text:
+                    # Fallback for existing Supabase schema missing seating_image column
+                    chunk_no_img = [{k: v for k, v in item.items() if k != "seating_image"} for item in chunk]
+                    resp2 = requests.post(endpoint, json=chunk_no_img, headers=headers, timeout=settings.request_timeout_seconds)
+                    if resp2.status_code in (200, 201, 204):
+                        total_upserted += len(chunk_no_img)
+                    else:
+                        errors += 1
+                        logger.error("Supabase fallback upsert error (%s): %s", resp2.status_code, resp2.text[:400])
                 else:
                     errors += 1
                     logger.error("Supabase upsert error (%s): %s", resp.status_code, resp.text[:400])

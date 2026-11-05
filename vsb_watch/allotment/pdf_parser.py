@@ -330,6 +330,20 @@ def extract_all_pdf_allotments(pdf_path: Path, source_url: str = "") -> list[dic
                             })
             else:
                 # Seating Allotment (Room-wise seating chart)
+                safe_stem = re.sub(r'[^a-zA-Z0-9_.-]', '_', pdf_path.stem)
+                img_name = f"{safe_stem}_page_{pi+1}.png"
+                img_rel = f"evidence/{img_name}"
+                rendered_pix = None
+
+                from vsb_watch.config import ROOT_DIR
+                for tdir in (ROOT_DIR / 'evidence', ROOT_DIR / 'docs/evidence', ROOT_DIR / 'portal/evidence'):
+                    tdir.mkdir(parents=True, exist_ok=True)
+                    target_file = tdir / img_name
+                    if not target_file.exists():
+                        if rendered_pix is None:
+                            rendered_pix = page.get_pixmap(matrix=fitz.Matrix(1.4, 1.4), alpha=False)
+                        rendered_pix.save(target_file)
+
                 seat_map = {}
                 subject_map = {}
                 for t in tables.tables:
@@ -372,6 +386,7 @@ def extract_all_pdf_allotments(pdf_path: Path, source_url: str = "") -> list[dic
                         "page": pi + 1,
                         "confidence": "high" if page_hall and seat else "partial",
                         "source_url": source_url,
+                        "seating_image": img_rel,
                     })
 
     # Deduplicate within same PDF run
@@ -389,5 +404,7 @@ def extract_all_pdf_allotments(pdf_path: Path, source_url: str = "") -> list[dic
                 existing["subject_name"] = r["subject_name"]
             if not existing.get("subject_code") and r.get("subject_code"):
                 existing["subject_code"] = r["subject_code"]
+            if not existing.get("seating_image") and r.get("seating_image"):
+                existing["seating_image"] = r["seating_image"]
     return list(unique_records.values())
 
