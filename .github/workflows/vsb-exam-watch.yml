@@ -2,8 +2,8 @@ name: VSB Exam Watch
 
 on:
   schedule:
-    # Runs twice per hour (GitHub cron uses UTC).
-    - cron: '3,33 * * * *'
+    # Runs every 5 minutes (maximum allowed frequency on GitHub Actions).
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     steps:
       - name: Check out repository and saved monitoring state
         uses: actions/checkout@v4
@@ -53,7 +53,7 @@ jobs:
           SUPABASE_TABLE: ${{ vars.SUPABASE_TABLE || 'allotments' }}
           ALLOW_ALL_EXAM_DATES: 'true'
           DATABASE_PATH: data/state/vsb_exam_watch.sqlite3
-          POLL_INTERVAL_MINUTES: '30'
+          POLL_INTERVAL_MINUTES: '5'
           PYTHONUNBUFFERED: '1'
         run: python main.py --once
 
