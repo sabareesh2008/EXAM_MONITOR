@@ -104,6 +104,7 @@ def main():
   from vsb_watch.config import ROOT_DIR
   db.export_allotments_data(ROOT_DIR / 'portal/allotments.json', ROOT_DIR / 'portal/allotments.js', current_only=True)
   db.export_allotments_data(ROOT_DIR / 'docs/allotments.json', ROOT_DIR / 'docs/allotments.js', current_only=True)
+  db.export_allotments_data(ROOT_DIR / 'allotments.json', ROOT_DIR / 'allotments.js', current_only=True)
   return 0
  if args.once: print(WebsiteMonitor(db).run_once()); return 0
  if args.dashboard:

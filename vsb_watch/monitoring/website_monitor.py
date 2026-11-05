@@ -164,4 +164,5 @@ class WebsiteMonitor:
    from vsb_watch.config import ROOT_DIR
    self.database.export_allotments_data(ROOT_DIR / 'portal/allotments.json', ROOT_DIR / 'portal/allotments.js', current_only=True)
    self.database.export_allotments_data(ROOT_DIR / 'docs/allotments.json', ROOT_DIR / 'docs/allotments.js', current_only=True)
+   self.database.export_allotments_data(ROOT_DIR / 'allotments.json', ROOT_DIR / 'allotments.js', current_only=True)
   return {'candidates':len(candidates),'new':new,'changed':changed,'eligible_target_pdfs':eligible,'ignored_non_target_pdfs':skipped,'matches':matches,'errors':errors}

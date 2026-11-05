@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Allotment Portal | Hall & Seating Arrangement Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="allotments.js"></script>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f293d;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --accent-fn: #0284c7;
+      --accent-an: #d97706;
+      --success: #10b981;
+      --danger: #ef4444;
+      --text: #f3f4f6;
+      --text-muted: #94a3b8;
+      --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-top: 16px;
+    }
+
+    .college-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* Search Box */
+    .search-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+      margin-bottom: 28px;
+    }
+
+    .search-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .search-form { flex-direction: row; }
+    }
+
+    .input-wrap {
+      flex: 1;
+      position: relative;
+    }
+
+    .input-wrap input {
+      width: 100%;
+      background: #0b1120;
+      border: 2px solid #23314d;
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 16px;
+      border-radius: 12px;
+      outline: none;
+      transition: all 0.2s ease;
+      letter-spacing: 0.05em;
+    }
+
+    .input-wrap input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    }
+
+    .btn-search {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-family: var(--font-main);
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-search:hover {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      transform: translateY(-1px);
+    }
+
+    .btn-search:active {
+      transform: translateY(0);
+    }
+
+    .btn-search:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .settings-toggle {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .settings-toggle a {
+      color: #60a5fa;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .settings-panel {
+      display: none;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--card-border);
+      font-size: 12px;
+    }
+
+    .settings-panel.open { display: block; }
+    .settings-panel input {
+      width: 100%;
+      background: #0b1120;
+      border: 1px solid #23314d;
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 6px;
+      margin-top: 4px;
+      margin-bottom: 8px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+
+    /* Results Header */
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .student-badge {
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 700;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.1);
+      padding: 4px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .count-badge {
+      font-size: 13px;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+
+    .btn-print {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: #cbd5e1;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-print:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
+
+    /* Cards */
+    .cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .exam-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .exam-card:hover {
+      border-color: #3b82f6;
+      transform: translateY(-2px);
+    }
+
+    .exam-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+    }
+
+    .exam-card.session-fn::before { background: var(--accent-fn); }
+    .exam-card.session-an::before { background: var(--accent-an); }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .exam-date-box {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .exam-date {
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .exam-day {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .session-pill {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .session-pill.fn {
+      background: rgba(2, 132, 199, 0.18);
+      color: #38bdf8;
+      border: 1px solid rgba(2, 132, 199, 0.35);
+    }
+
+    .session-pill.an {
+      background: rgba(217, 119, 6, 0.18);
+      color: #fbbf24;
+      border: 1px solid rgba(217, 119, 6, 0.35);
+    }
+
+    .subject-info {
+      margin-bottom: 16px;
+    }
+
+    .subject-code {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: #93c5fd;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .subject-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+
+    .allotment-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      background: #090e1a;
+      border: 1px solid #1a2436;
+      border-radius: 10px;
+      padding: 12px 16px;
+    }
+
+    .grid-cell span {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .grid-cell strong {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .grid-cell.hall strong { color: #38bdf8; }
+    .grid-cell.seat strong { color: #4ade80; }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .card-meta a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    /* Not Allotted & Loading */
+    .state-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .state-box.not-allotted {
+      border-color: rgba(239, 68, 68, 0.3);
+      background: rgba(239, 68, 68, 0.04);
+    }
+
+    .state-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .state-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f87171;
+      margin-bottom: 8px;
+    }
+
+    .state-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .spinner {
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding: 16px 0;
+    }
+
+    footer a { color: #94a3b8; }
+
+    @media print {
+      body { background: white; color: black; padding: 0; }
+      .search-card, header .college-tag, .settings-toggle, .btn-print, footer { display: none !important; }
+      .exam-card { border: 1px solid #ccc; background: white; color: black; page-break-inside: avoid; }
+      .exam-date, .subject-title, .grid-cell strong { color: black !important; }
+      .allotment-grid { background: #f8fafc; border: 1px solid #ccc; }
+      .student-badge { background: #eee; color: black; border: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="college-tag">SEMESTER EXAMINATION MONITOR</div>
+      <h1>Exam Allotment Portal</h1>
+      <p class="subtitle">Real-Time Examination Hall & Seating Arrangement Finder</p>
+    </header>
+
+    <div class="search-card">
+      <form class="search-form" id="searchForm">
+        <div class="input-wrap">
+          <input 
+            type="text" 
+            id="regInput" 
+            placeholder="Enter Register Number (e.g. 922524103002)" 
+            autocomplete="off" 
+            autofocus 
+            required 
+            pattern="[0-9]{9,15}"
+            title="Please enter a valid 9 to 15 digit register number"
+          >
+        </div>
+        <button type="submit" class="btn-search" id="searchBtn">
+          <span>Find Allotment</span>
+        </button>
+      </form>
+      <p style="margin-top:14px;font-size:13px;color:#94a3b8;text-align:center;">
+        Enter your university register number to view your allocated examination hall & seat arrangement.
+      </p>
+    </div>
+
+    <div id="loadingView" class="state-box" style="display: none;">
+      <div class="spinner"></div>
+      <div style="font-weight:600;color:#94a3b8;">Searching published examination records...</div>
+    </div>
+
+    <div id="resultsContainer" style="display: none;">
+      <div class="results-header">
+        <div>
+          <span class="student-badge" id="displayReg">REG NUMBER</span>
+          <span class="count-badge" id="displayCount" style="margin-left:8px;">0 EXAMS</span>
+        </div>
+        <button class="btn-print" onclick="window.print()">🖨️ Print Slip</button>
+      </div>
+
+      <div class="cards-list" id="cardsList"></div>
+    </div>
+
+    <div id="emptyView" class="state-box not-allotted" style="display: none;">
+      <div class="state-icon">📋</div>
+      <div class="state-title">Not Allotted / Not Yet Published</div>
+      <div class="state-desc" id="emptyDesc">
+        No examination allotment was found for this register number in currently published records.
+      </div>
+    </div>
+
+    <footer>
+      Automated Examination Notice Watcher &copy; 2026 · Real-Time Allotment Portal
+    </footer>
+  </div>
+
+  <script>
+    // Configuration storage
+    const STORAGE_KEY = 'vsb_exam_watch_config';
+    function getConfig() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try { return JSON.parse(saved); } catch (e) {}
+      }
+      return {
+        supabaseUrl: 'https://qureidddqdvetjztacyr.supabase.co',
+        supabaseKey: 'sb_publishable_VMxukWhA2lNayHhsDySvcg_pVR1QgZP',
+        localApi: 'http://127.0.0.1:5000'
+      };
+    }
+
+    function saveConfig(cfg) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(cfg));
+    }
+
+    // UI elements
+    const form = document.getElementById('searchForm');
+    const input = document.getElementById('regInput');
+    const btn = document.getElementById('searchBtn');
+    const loadingView = document.getElementById('loadingView');
+    const resultsContainer = document.getElementById('resultsContainer');
+    const emptyView = document.getElementById('emptyView');
+    const emptyDesc = document.getElementById('emptyDesc');
+    const cardsList = document.getElementById('cardsList');
+    const displayReg = document.getElementById('displayReg');
+    const displayCount = document.getElementById('displayCount');
+
+    // Format date string YYYY-MM-DD -> "Friday, 06 Nov 2026"
+    function formatExamDate(dateStr) {
+      if (!dateStr || dateStr === 'UNKNOWN') return { dateText: 'Date to be announced', dayText: '' };
+      try {
+        const parts = dateStr.split('-');
+        if (parts.length === 3) {
+          const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+          const dateText = d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+          const dayText = d.toLocaleDateString('en-GB', { weekday: 'long' });
+          return { dateText, dayText };
+        }
+      } catch (e) {}
+      return { dateText: dateStr, dayText: '' };
+    }
+
+    // Query allotments: Memory cache -> Static JSON -> Supabase -> Local backend API
+    async function queryAllotments(reg, currentOnly = true) {
+      const cfg = getConfig();
+      const todayIso = new Date().toISOString().split('T')[0];
+
+      // 1. Direct synchronous memory cache (from allotments.js)
+      if (window.VSB_ALLOTMENTS && typeof window.VSB_ALLOTMENTS === 'object') {
+        let recs = window.VSB_ALLOTMENTS[reg] || [];
+        if (currentOnly && recs.length > 0) {
+          recs = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+        }
+        return { success: true, records: recs };
+      }
+
+      // 2. Try static allotments.json (works on GitHub Pages / static hosting)
+      try {
+        const staticRes = await fetch('allotments.json');
+        if (staticRes.ok) {
+          const allData = await staticRes.json();
+          window.VSB_ALLOTMENTS = allData;
+          let recs = allData[reg] || [];
+          if (currentOnly && recs.length > 0) {
+            recs = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+          }
+          return { success: true, records: recs };
+        }
+      } catch (err) {}
+
+      // 3. Try Supabase if configured
+      if (cfg.supabaseUrl && cfg.supabaseKey) {
+        try {
+          const dateFilter = currentOnly ? `&exam_date=gte.${todayIso}` : '';
+          const url = `${cfg.supabaseUrl}/rest/v1/allotments?register_number=eq.${encodeURIComponent(reg)}${dateFilter}&order=exam_date.asc,session.asc`;
+          const res = await fetch(url, {
+            headers: {
+              'apikey': cfg.supabaseKey,
+              'Authorization': `Bearer ${cfg.supabaseKey}`
+            }
+          });
+          if (res.ok) {
+            const records = await res.json();
+            return { success: true, records };
+          }
+        } catch (err) {
+          console.warn('Supabase query failed:', err);
+        }
+      }
+
+      // 4. Try Local API endpoint
+      if (cfg.localApi) {
+        try {
+          const historyParam = currentOnly ? '' : '?all_history=true';
+          const res = await fetch(`${cfg.localApi}/api/allotments/${encodeURIComponent(reg)}${historyParam}`);
+          if (res.ok) {
+            const data = await res.json();
+            return { success: true, records: data.allotments || [] };
+          }
+        } catch (err) {
+          console.warn('Local API fetch failed:', err);
+        }
+      }
+
+      return { success: false, error: 'Database unreachable' };
+    }
+
+    // Handle form submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const reg = input.value.trim().replace(/\s+/g, '');
+      if (!reg) return;
+
+      const currentOnly = true;
+
+      // URL state sync
+      const url = new URL(window.location);
+      url.searchParams.set('reg', reg);
+      window.history.pushState({}, '', url);
+
+      // Loading state
+      btn.disabled = true;
+      loadingView.style.display = 'block';
+      resultsContainer.style.display = 'none';
+      emptyView.style.display = 'none';
+
+      try {
+        const outcome = await queryAllotments(reg, currentOnly);
+        if (!outcome.success && (!outcome.records || outcome.records.length === 0)) {
+          emptyDesc.innerHTML = `<span style="color:#f87171;font-weight:700;">Could not connect to examination database.</span><br><br>Make sure the local backend server is running (<code>python main.py --dashboard</code>) or that <code>allotments.js</code> is in the same folder.`;
+          emptyView.style.display = 'block';
+        } else {
+          renderResults(reg, outcome.records || [], currentOnly);
+        }
+      } catch (err) {
+        console.error(err);
+        emptyDesc.innerHTML = `<span style="color:#f87171;font-weight:700;">An error occurred while querying.</span><br><br>${err.message || err}`;
+        emptyView.style.display = 'block';
+      } finally {
+        loadingView.style.display = 'none';
+        btn.disabled = false;
+      }
+    });
+
+    function renderResults(reg, list, currentOnly) {
+      if (!list || list.length === 0) {
+        const periodText = currentOnly ? "currently published / upcoming" : "published";
+        emptyDesc.innerHTML = `No ${periodText} examination allotment record was found for Register Number <strong>${reg}</strong>.<br><br>If today or tomorrow is your examination day, the Controller of Examinations notice may not yet be uploaded. Please verify the notice board.`;
+        emptyView.style.display = 'block';
+        return;
+      }
+
+      displayReg.textContent = `REG: ${reg}`;
+      displayCount.textContent = `${list.length} ${list.length === 1 ? 'CURRENT EXAM' : 'CURRENT EXAMS'}`;
+      cardsList.innerHTML = '';
+
+      list.forEach(item => {
+        const session = (item.session || 'FN').toUpperCase();
+        const sessionClass = session === 'AN' ? 'session-an' : 'session-fn';
+        const sessionBadgeClass = session === 'AN' ? 'an' : 'fn';
+        const sessionTime = session === 'AN' ? 'AN · 01:30 PM – 04:30 PM' : 'FN · 09:30 AM – 12:30 PM';
+        
+        const { dateText, dayText } = formatExamDate(item.exam_date);
+        const subjCode = item.subject_code ? item.subject_code : 'Subject';
+        const subjName = item.subject_name ? item.subject_name : 'Theory Examination';
+        const hall = item.hall_number || 'Check Notice Board';
+        const seat = item.seat_number && item.seat_number !== 'UNKNOWN' ? item.seat_number : 'Check Hall Display';
+        const page = item.page || item.page_number;
+
+        const card = document.createElement('div');
+        card.className = `exam-card ${sessionClass}`;
+        card.innerHTML = `
+          <div class="card-top">
+            <div class="exam-date-box">
+              <span class="exam-date">${dateText}</span>
+              ${dayText ? `<span class="exam-day">${dayText}</span>` : ''}
+            </div>
+            <span class="session-pill ${sessionBadgeClass}">${sessionTime}</span>
+          </div>
+
+          <div class="subject-info">
+            <div class="subject-code">${subjCode}</div>
+            <div class="subject-title">${subjName}</div>
+          </div>
+
+          <div class="allotment-grid">
+            <div class="grid-cell hall">
+              <span>Exam Hall / Room</span>
+              <strong>${hall}</strong>
+            </div>
+            <div class="grid-cell seat">
+              <span>Allocated Seat No</span>
+              <strong>${seat}</strong>
+            </div>
+          </div>
+
+          <div class="card-meta">
+            <span>Status: <strong style="color:#22c55e;">Confirmed</strong> · ${page ? `PDF Page ${page}` : 'COE Portal'}</span>
+            ${item.source_pdf_url || item.document_url ? `<a href="${item.source_pdf_url || item.document_url}" target="_blank" rel="noopener">View Official PDF ↗</a>` : ''}
+          </div>
+        `;
+        cardsList.appendChild(card);
+      });
+
+      resultsContainer.style.display = 'block';
+    }
+
+    // Auto-search if ?reg=... is in query string
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const regParam = params.get('reg');
+      if (regParam) {
+        input.value = regParam;
+        form.dispatchEvent(new Event('submit'));
+      }
+    });
+  </script>
+</body>
+</html>
