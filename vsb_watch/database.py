@@ -109,6 +109,28 @@ class Database:
                 ORDER BY a.exam_date ASC, CASE WHEN a.session = 'FN' THEN 1 ELSE 2 END ASC
                 '''
                 rows = c.execute(query, (reg, ref)).fetchall()
+                if not rows:
+                    fallback_query = '''
+                    SELECT 
+                        a.register_number,
+                        a.exam_date,
+                        a.session,
+                        MAX(a.hall_number) as hall_number,
+                        MAX(CASE WHEN a.seat_number IS NOT NULL AND a.seat_number NOT IN ('UNKNOWN', 'Check Hall', '') THEN a.seat_number ELSE NULL END) as seat_number,
+                        MAX(a.subject_code) as subject_code,
+                        MAX(a.subject_name) as subject_name,
+                        MIN(a.page) as page,
+                        MAX(a.source_url) as source_url,
+                        MAX(a.seating_image) as seating_image,
+                        MAX(d.filename) as filename,
+                        MAX(d.url) as document_url
+                    FROM allotments a
+                    LEFT JOIN documents d ON d.id = a.document_id
+                    WHERE a.register_number = ? AND a.exam_date IN (SELECT DISTINCT exam_date FROM allotments ORDER BY exam_date DESC LIMIT 2)
+                    GROUP BY a.register_number, a.exam_date, a.session
+                    ORDER BY a.exam_date ASC, CASE WHEN a.session = 'FN' THEN 1 ELSE 2 END ASC
+                    '''
+                    rows = c.execute(fallback_query, (reg,)).fetchall()
             else:
                 query = '''
                 SELECT 
@@ -164,6 +186,24 @@ class Database:
                 GROUP BY a.register_number, a.exam_date, a.session
                 ORDER BY a.exam_date ASC, CASE WHEN a.session = 'FN' THEN 1 ELSE 2 END ASC
                 ''', (today,)).fetchall()
+                if not rows:
+                    rows = c.execute('''
+                    SELECT 
+                        a.register_number,
+                        a.exam_date,
+                        a.session,
+                        MAX(a.hall_number) as hall_number,
+                        MAX(CASE WHEN a.seat_number IS NOT NULL AND a.seat_number NOT IN ('UNKNOWN', 'Check Hall', '') THEN a.seat_number ELSE NULL END) as seat_number,
+                        MAX(a.subject_code) as subject_code,
+                        MAX(a.subject_name) as subject_name,
+                        MIN(a.page) as page,
+                        MAX(a.source_url) as source_url,
+                        MAX(a.seating_image) as seating_image
+                    FROM allotments a
+                    WHERE a.exam_date IN (SELECT DISTINCT exam_date FROM allotments ORDER BY exam_date DESC LIMIT 2)
+                    GROUP BY a.register_number, a.exam_date, a.session
+                    ORDER BY a.exam_date ASC, CASE WHEN a.session = 'FN' THEN 1 ELSE 2 END ASC
+                    ''').fetchall()
             else:
                 rows = c.execute('''
                 SELECT 
@@ -183,6 +223,7 @@ class Database:
                 ''').fetchall()
 
         mapping: dict[str, list[dict]] = {}
+        active_notices: dict[str, dict] = {}
         for r in rows:
             reg = str(r['register_number']).strip()
             if reg not in mapping:
@@ -192,10 +233,27 @@ class Database:
                 item['seat_number'] = 'Check Hall'
             mapping[reg].append(item)
 
+            ed = item.get('exam_date')
+            if ed and ed != 'UNKNOWN':
+                sess = (item.get('session') or 'FN').upper()
+                if ed not in active_notices:
+                    active_notices[ed] = {'exam_date': ed, 'sessions': set(), 'count': 0}
+                active_notices[ed]['sessions'].add(sess)
+                active_notices[ed]['count'] += 1
+
+        active_list = []
+        for ed in sorted(active_notices.keys()):
+            active_list.append({
+                'exam_date': ed,
+                'sessions': sorted(list(active_notices[ed]['sessions'])),
+                'count': active_notices[ed]['count']
+            })
+
         json_path.write_text(json.dumps(mapping, indent=2, ensure_ascii=False), encoding='utf-8')
+        (json_path.parent / "active_notices.json").write_text(json.dumps(active_list, indent=2, ensure_ascii=False), encoding='utf-8')
         if js_path:
             js_path.parent.mkdir(parents=True, exist_ok=True)
-            js_content = f"window.VSB_ALLOTMENTS = {json.dumps(mapping, ensure_ascii=False)};"
+            js_content = f"window.VSB_ACTIVE_NOTICES = {json.dumps(active_list, ensure_ascii=False)};\nwindow.VSB_ALLOTMENTS = {json.dumps(mapping, ensure_ascii=False)};"
             js_path.write_text(js_content, encoding='utf-8')
         return len(mapping)
     def create_notification(self,event_key,recipient,subject,status,detail):

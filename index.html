@@ -425,6 +425,225 @@
       to { transform: rotate(360deg); }
     }
 
+    /* Active Notices Card */
+    .active-notices-card {
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.9) 0%, rgba(11, 17, 32, 0.95) 100%);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .active-notices-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #10b981, #3b82f6);
+    }
+
+    .active-notices-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .active-notices-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-dot-pulse {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulseGreen 1.8s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+      }
+    }
+
+    .active-notices-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #93c5fd;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .active-notices-count-badge {
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #4ade80;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      letter-spacing: 0.03em;
+    }
+
+    .active-notices-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    @media (min-width: 640px) {
+      .active-notices-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+
+    .active-date-card {
+      background: rgba(30, 41, 59, 0.55);
+      border: 1px solid rgba(71, 85, 105, 0.4);
+      border-radius: 12px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .active-date-card:hover {
+      background: rgba(30, 41, 59, 0.85);
+      border-color: rgba(59, 130, 246, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .active-date-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .active-calendar-badge {
+      background: #0f172a;
+      border: 1px solid #334155;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .active-calendar-month {
+      font-size: 9px;
+      font-weight: 800;
+      color: #94a3b8;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .active-calendar-day {
+      font-size: 16px;
+      font-weight: 800;
+      color: #f8fafc;
+      line-height: 1.1;
+      font-family: var(--font-mono);
+    }
+
+    .active-date-details {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .active-date-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #f1f5f9;
+    }
+
+    .active-sessions-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+
+    .active-session-pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .active-session-pill.fn {
+      background: rgba(59, 130, 246, 0.18);
+      border: 1px solid rgba(59, 130, 246, 0.45);
+      color: #93c5fd;
+    }
+
+    .active-session-pill.an {
+      background: rgba(245, 158, 11, 0.18);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      color: #fcd34d;
+    }
+
+    .active-status-badge {
+      background: rgba(34, 197, 94, 0.12);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      color: #4ade80;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .active-notices-footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(51, 65, 85, 0.4);
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .active-empty-state {
+      padding: 16px;
+      text-align: center;
+      background: rgba(30, 41, 59, 0.3);
+      border-radius: 10px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
     /* Seating Chart Evidence Box */
     .seating-evidence-box {
       margin-top: 16px;
@@ -642,7 +861,7 @@
 
     @media print {
       body { background: white; color: black; padding: 0; }
-      .search-card, header .college-tag, .settings-toggle, .btn-print, footer, .btn-zoom, .evidence-overlay-hint, .modal-overlay { display: none !important; }
+      .search-card, .active-notices-card, header .college-tag, .settings-toggle, .btn-print, footer, .btn-zoom, .evidence-overlay-hint, .modal-overlay { display: none !important; }
       .exam-card { border: 1px solid #ccc; background: white; color: black; page-break-inside: avoid; }
       .exam-date, .subject-title, .grid-cell strong { color: black !important; }
       .allotment-grid { background: #f8fafc; border: 1px solid #ccc; }
@@ -657,6 +876,26 @@
       <h1>Exam Allotment Portal</h1>
       <p class="subtitle">Real-Time Examination Hall & Seating Arrangement Finder</p>
     </header>
+
+    <!-- Live Active Examination Allotments Banner -->
+    <div class="active-notices-card" id="activeNoticesCard">
+      <div class="active-notices-header">
+        <div class="active-notices-title-wrap">
+          <span class="live-dot-pulse"></span>
+          <span class="active-notices-title">Live Published Examination Allotments</span>
+        </div>
+        <span class="active-notices-count-badge" id="activeCountBadge">Checking notices...</span>
+      </div>
+      <div class="active-notices-grid" id="activeNoticesList">
+        <div class="active-empty-state">
+          <span>Loading currently published examination notices...</span>
+        </div>
+      </div>
+      <div class="active-notices-footer">
+        <span>⚡ Synchronized with Controller of Examinations notice board</span>
+        <span>Enter your register number below to view hall & seat</span>
+      </div>
+    </div>
 
     <div class="search-card">
       <form class="search-form" id="searchForm">
@@ -804,6 +1043,144 @@
     const displayReg = document.getElementById('displayReg');
     const displayCount = document.getElementById('displayCount');
 
+    function parseCalendarDate(dateStr) {
+      if (!dateStr || dateStr === 'UNKNOWN') return { month: 'EXAM', day: '--', dayName: 'Date to be announced', fullDate: dateStr };
+      try {
+        const parts = dateStr.split('-');
+        if (parts.length === 3) {
+          const d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+          const month = d.toLocaleDateString('en-GB', { month: 'short' }).toUpperCase();
+          const day = d.toLocaleDateString('en-GB', { day: '2-digit' });
+          const dayName = d.toLocaleDateString('en-GB', { weekday: 'long' });
+          const fullDate = d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+          return { month, day, dayName, fullDate };
+        }
+      } catch (e) {}
+      return { month: 'EXAM', day: '--', dayName: '', fullDate: dateStr };
+    }
+
+    async function loadAndRenderActiveNotices() {
+      const container = document.getElementById('activeNoticesList');
+      const countBadge = document.getElementById('activeCountBadge');
+      if (!container) return;
+
+      let notices = [];
+
+      // 1. Direct from window.VSB_ACTIVE_NOTICES if available
+      if (window.VSB_ACTIVE_NOTICES && Array.isArray(window.VSB_ACTIVE_NOTICES) && window.VSB_ACTIVE_NOTICES.length > 0) {
+        notices = window.VSB_ACTIVE_NOTICES;
+      }
+
+      // 2. Derive from window.VSB_ALLOTMENTS if not pre-compiled
+      if (notices.length === 0 && window.VSB_ALLOTMENTS && typeof window.VSB_ALLOTMENTS === 'object') {
+        const grouped = {};
+        for (const reg in window.VSB_ALLOTMENTS) {
+          const items = window.VSB_ALLOTMENTS[reg];
+          if (!Array.isArray(items)) continue;
+          for (const it of items) {
+            const ed = it.exam_date;
+            if (!ed || ed === 'UNKNOWN') continue;
+            const sess = (it.session || 'FN').toUpperCase();
+            if (!grouped[ed]) {
+              grouped[ed] = { exam_date: ed, sessions: new Set(), count: 0 };
+            }
+            grouped[ed].sessions.add(sess);
+            grouped[ed].count++;
+          }
+        }
+        notices = Object.keys(grouped).sort().map(ed => ({
+          exam_date: ed,
+          sessions: Array.from(grouped[ed].sessions).sort(),
+          count: grouped[ed].count
+        }));
+      }
+
+      // 3. Try fetching static active_notices.json or allotments.json if needed
+      if (notices.length === 0) {
+        try {
+          const res = await fetch('active_notices.json');
+          if (res.ok) {
+            notices = await res.json();
+            window.VSB_ACTIVE_NOTICES = notices;
+          }
+        } catch (e) {}
+      }
+
+      if (notices.length === 0) {
+        try {
+          const res = await fetch('allotments.json');
+          if (res.ok) {
+            const data = await res.json();
+            window.VSB_ALLOTMENTS = data;
+            const grouped = {};
+            for (const reg in data) {
+              const items = data[reg];
+              if (!Array.isArray(items)) continue;
+              for (const it of items) {
+                const ed = it.exam_date;
+                if (!ed || ed === 'UNKNOWN') continue;
+                const sess = (it.session || 'FN').toUpperCase();
+                if (!grouped[ed]) {
+                  grouped[ed] = { exam_date: ed, sessions: new Set(), count: 0 };
+                }
+                grouped[ed].sessions.add(sess);
+                grouped[ed].count++;
+              }
+            }
+            notices = Object.keys(grouped).sort().map(ed => ({
+              exam_date: ed,
+              sessions: Array.from(grouped[ed].sessions).sort(),
+              count: grouped[ed].count
+            }));
+          }
+        } catch (e) {}
+      }
+
+      if (notices.length === 0) {
+        countBadge.textContent = 'Monitoring Live';
+        container.innerHTML = `
+          <div class="active-empty-state">
+            <div style="font-weight:700;color:#cbd5e1;margin-bottom:4px;">No upcoming examination notices uploaded yet.</div>
+            <div>Automated system is monitoring the Controller of Examinations notice board every 5 minutes.</div>
+          </div>
+        `;
+        return;
+      }
+
+      countBadge.textContent = `${notices.length} ${notices.length === 1 ? 'Exam Date Active' : 'Exam Dates Active'}`;
+      container.innerHTML = '';
+
+      notices.forEach(item => {
+        const { month, day, dayName, fullDate } = parseCalendarDate(item.exam_date);
+        const sessions = item.sessions || ['FN'];
+        const sessionPills = sessions.map(s => {
+          const sLower = s.toLowerCase();
+          const sLabel = s === 'AN' ? 'AN · 01:30 PM' : 'FN · 09:30 AM';
+          return `<span class="active-session-pill ${sLower}">${sLabel}</span>`;
+        }).join('');
+
+        const card = document.createElement('div');
+        card.className = 'active-date-card';
+        card.innerHTML = `
+          <div class="active-date-info">
+            <div class="active-calendar-badge">
+              <span class="active-calendar-month">${month}</span>
+              <span class="active-calendar-day">${day}</span>
+            </div>
+            <div class="active-date-details">
+              <div class="active-date-title">${dayName ? `${dayName}, ${fullDate}` : fullDate}</div>
+              <div class="active-sessions-row">
+                ${sessionPills}
+                ${item.count ? `<span style="font-size:11px;color:#94a3b8;margin-left:4px;">(${item.count.toLocaleString()} allotments)</span>` : ''}
+              </div>
+            </div>
+          </div>
+          <span class="active-status-badge">🟢 ACTIVE NOW</span>
+        `;
+        container.appendChild(card);
+      });
+    }
+
     // Format date string YYYY-MM-DD -> "Friday, 06 Nov 2026"
     function formatExamDate(dateStr) {
       if (!dateStr || dateStr === 'UNKNOWN') return { dateText: 'Date to be announced', dayText: '' };
@@ -828,7 +1205,8 @@
       if (window.VSB_ALLOTMENTS && typeof window.VSB_ALLOTMENTS === 'object') {
         let recs = window.VSB_ALLOTMENTS[reg] || [];
         if (currentOnly && recs.length > 0) {
-          recs = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+          const current = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+          if (current.length > 0) recs = current;
         }
         return { success: true, records: recs };
       }
@@ -841,7 +1219,8 @@
           window.VSB_ALLOTMENTS = allData;
           let recs = allData[reg] || [];
           if (currentOnly && recs.length > 0) {
-            recs = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+            const current = recs.filter(item => !item.exam_date || item.exam_date >= todayIso);
+            if (current.length > 0) recs = current;
           }
           return { success: true, records: recs };
         }
@@ -1005,8 +1384,9 @@
       resultsContainer.style.display = 'block';
     }
 
-    // Auto-search if ?reg=... is in query string
+    // Initialize active notices & auto-search if ?reg=... is in query string
     window.addEventListener('DOMContentLoaded', () => {
+      loadAndRenderActiveNotices();
       const params = new URLSearchParams(window.location.search);
       const regParam = params.get('reg');
       if (regParam) {

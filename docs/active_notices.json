@@ -1,0 +1,18 @@
+[
+  {
+    "exam_date": "2026-11-05",
+    "sessions": [
+      "AN",
+      "FN"
+    ],
+    "count": 1459
+  },
+  {
+    "exam_date": "2026-11-06",
+    "sessions": [
+      "AN",
+      "FN"
+    ],
+    "count": 1705
+  }
+]

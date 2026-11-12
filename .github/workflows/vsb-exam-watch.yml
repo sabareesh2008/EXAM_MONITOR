@@ -74,7 +74,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f data/state/vsb_exam_watch.sqlite3 data/state/.gitkeep docs/ portal/ evidence/ allotments.js allotments.json index.html .nojekyll
+          git add -f data/state/vsb_exam_watch.sqlite3 data/state/.gitkeep docs/ portal/ evidence/ allotments.js allotments.json active_notices.json index.html .nojekyll
           if ! git diff --cached --quiet; then
             git commit -m "Update VSB Exam Watch state and student allotments [skip ci]"
             git push
