@@ -99,6 +99,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_4.png"
+    },
+    {
+      "register_number": "922523105015",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "3",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105021": [
@@ -161,6 +173,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523105021",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "7",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105044": [
@@ -223,6 +247,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523105044",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "11",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105058": [
@@ -261,6 +297,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922523105058",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "19",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105301": [
@@ -301,6 +349,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106007",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "2",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106013": [
@@ -315,6 +375,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106013",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "6",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106013",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "2",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106023": [
@@ -341,6 +425,30 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_21.png"
+    },
+    {
+      "register_number": "922523106023",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "8",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106023",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "4",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106080": [
@@ -367,6 +475,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_21.png"
+    },
+    {
+      "register_number": "922523106080",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "16",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106092": [
@@ -381,6 +501,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106092",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "8",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106101": [
@@ -419,6 +551,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922523106101",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "22",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106115": [
@@ -457,6 +601,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922523106115",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "24",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106115",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "10",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106121": [
@@ -471,6 +639,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106121",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "26",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922523106121",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "12",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106229": [
@@ -521,6 +713,30 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922523106229",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "8",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922523106229",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "22",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523121039": [
@@ -573,6 +789,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922523203014",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "26",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523205188": [
@@ -587,6 +815,18 @@
       "page": 9,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_28.png"
+    },
+    {
+      "register_number": "922523205188",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "10",
+      "subject_code": "23ITT401",
+      "subject_name": "WEB ESSENTIALS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524103001": [
@@ -1207,6 +1447,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524105017",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "27",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524105028": [
@@ -1245,6 +1497,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_22.png"
+    },
+    {
+      "register_number": "922524105028",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "5",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105032": [
@@ -1307,6 +1571,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524105032",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "11",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105045": [
@@ -1345,6 +1621,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_23.png"
+    },
+    {
+      "register_number": "922524105045",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "21",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105059": [
@@ -1383,6 +1671,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_23.png"
+    },
+    {
+      "register_number": "922524105059",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "25",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106001": [
@@ -1411,6 +1711,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_1.png"
+    },
+    {
+      "register_number": "922524106002",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "10",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524106003": [
@@ -1495,6 +1807,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524106008",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "12",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524106008",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "24",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524106009": [
@@ -1575,6 +1911,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106013",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "16",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524106013",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "26",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524106014": [
@@ -1601,6 +1961,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106014",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "18",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524106015": [
@@ -1747,6 +2119,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106021",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "20",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524106021",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "28",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524106022": [
@@ -1787,6 +2183,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106023",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "22",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524106024": [
@@ -1893,6 +2301,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106028",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "24",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524106028",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "2",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106029": [
@@ -1991,6 +2423,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106035",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "26",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524106036": [
@@ -2213,6 +2657,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_20.png"
+    },
+    {
+      "register_number": "922524106050",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "28",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524106051": [
@@ -2381,6 +2837,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_6.png"
+    },
+    {
+      "register_number": "922524106063",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "2",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106064": [
@@ -2465,6 +2933,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_7.png"
+    },
+    {
+      "register_number": "922524106069",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "4",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106070": [
@@ -2507,6 +2987,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_7.png"
+    },
+    {
+      "register_number": "922524106072",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "6",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106073": [
@@ -2631,6 +3123,30 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_20.png"
+    },
+    {
+      "register_number": "922524106080",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "8",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106080",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "4",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106081": [
@@ -2713,6 +3229,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106085",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "10",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106085",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "6",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106086": [
@@ -2889,6 +3429,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106095",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "12",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106095",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "8",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106096": [
@@ -3011,6 +3575,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106102",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "16",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106102",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "10",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106103": [
@@ -3135,6 +3723,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_10.png"
+    },
+    {
+      "register_number": "922524106110",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "18",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106111": [
@@ -3283,6 +3883,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106119",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "20",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106119",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "12",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106120": [
@@ -3509,6 +4133,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106130",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "22",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106130",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "16",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106131": [
@@ -3561,6 +4209,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106132",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "24",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106134": [
@@ -3701,6 +4361,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_13.png"
+    },
+    {
+      "register_number": "922524106143",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "26",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524106144": [
@@ -3891,6 +4563,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106155",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "28",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524106155",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "18",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106156": [
@@ -4333,6 +5029,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106185",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "2",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106185",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "20",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106186": [
@@ -4389,6 +5109,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_16.png"
+    },
+    {
+      "register_number": "922524106189",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "4",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106190": [
@@ -4403,6 +5135,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_17.png"
+    },
+    {
+      "register_number": "922524106190",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "6",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106191": [
@@ -4691,6 +5435,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106209",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "8",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106209",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "22",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106210": [
@@ -4771,6 +5539,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106213",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "10",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106213",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "24",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106214": [
@@ -4785,6 +5577,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_18.png"
+    },
+    {
+      "register_number": "922524106214",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "12",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106215": [
@@ -4855,6 +5659,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_19.png"
+    },
+    {
+      "register_number": "922524106219",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "16",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106220": [
@@ -4979,6 +5795,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106227",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "18",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106227",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "26",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106228": [
@@ -4993,6 +5833,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_20.png"
+    },
+    {
+      "register_number": "922524106228",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "20",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106229": [
@@ -5033,6 +5885,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524106231",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "22",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106231",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "28",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524106232": [
@@ -5239,6 +6115,30 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524106244",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "24",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524106244",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "2",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524106245": [
@@ -5429,6 +6329,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524106301",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "26",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106302": [
@@ -5495,6 +6407,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524106305",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "28",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524106307": [
@@ -5521,6 +6445,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_21.png"
+    },
+    {
+      "register_number": "922524106307",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "2",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922524106308": [
@@ -5535,6 +6471,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_22.png"
+    },
+    {
+      "register_number": "922524106308",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "4",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922524106309": [
@@ -6259,6 +7207,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_29.png"
+    },
+    {
+      "register_number": "922524203014",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "28",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524203015": [
@@ -6339,6 +7299,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524203018",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "2",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524203019": [
@@ -6393,6 +7365,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_29.png"
+    },
+    {
+      "register_number": "922524203021",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "4",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524203023": [
@@ -6407,6 +7391,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_24.png"
+    },
+    {
+      "register_number": "922524203023",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "6",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524203024": [
@@ -6597,6 +7593,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_31.png"
+    },
+    {
+      "register_number": "922524205007",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "12",
+      "subject_code": "23ITT401",
+      "subject_name": "WEB ESSENTIALS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524205045": [
@@ -6635,6 +7643,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_32.png"
+    },
+    {
+      "register_number": "922524205045",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "16",
+      "subject_code": "23ITT401",
+      "subject_name": "WEB ESSENTIALS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524205111": [
@@ -6685,6 +7705,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524205111",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "18",
+      "subject_code": "23ITT401",
+      "subject_name": "WEB ESSENTIALS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524243001": [
@@ -7047,6 +8079,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524243026",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "11",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243027": [
@@ -7199,6 +8243,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524243036",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "13",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243037": [
@@ -7227,6 +8283,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524243038",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "17",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243039": [
@@ -7391,6 +8459,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524243049",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "19",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243050": [
@@ -7417,6 +8497,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243050",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "21",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243051": [
@@ -7833,6 +8925,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524243079",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "23",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243080": [
@@ -7875,6 +8979,18 @@
       "page": 7,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_7.png"
+    },
+    {
+      "register_number": "922524243082",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "25",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243083": [
@@ -8111,6 +9227,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243098",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "27",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922524243099": [
@@ -8167,6 +9295,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_8.png"
+    },
+    {
+      "register_number": "922524243102",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "3",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243103": [
@@ -8349,6 +9489,18 @@
       "page": 9,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_9.png"
+    },
+    {
+      "register_number": "922524243115",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "5",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243116": [
@@ -8907,6 +10059,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524243155",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "7",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243156": [
@@ -8949,6 +10113,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_12.png"
+    },
+    {
+      "register_number": "922524243158",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "9",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243159": [
@@ -8975,6 +10151,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243159",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "11",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243160": [
@@ -9055,6 +10243,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922524243163",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "13",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243164": [
@@ -9333,6 +10533,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524243183",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "17",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243184": [
@@ -9527,6 +10739,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243197",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "19",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243198": [
@@ -9591,6 +10815,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524243199",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "21",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243200": [
@@ -9757,6 +10993,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243210",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "23",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243211": [
@@ -9855,6 +11103,18 @@
       "page": 11,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_17.png"
+    },
+    {
+      "register_number": "922524243217",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "25",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243218": [
@@ -9895,6 +11155,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922524243219",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A03",
+      "seat_number": "27",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_3.png"
     }
   ],
   "922524243220": [
@@ -10063,6 +11335,18 @@
       "page": 11,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_18.png"
+    },
+    {
+      "register_number": "922524243231",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "3",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524243232": [
@@ -10353,6 +11637,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_6.png"
+    },
+    {
+      "register_number": "922524243301",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "5",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524243302": [
@@ -10391,6 +11687,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_6.png"
+    },
+    {
+      "register_number": "922524243302",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "7",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524243303": [
@@ -10405,6 +11713,18 @@
       "page": 11,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_19.png"
+    },
+    {
+      "register_number": "922524243303",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "9",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524243304": [
@@ -10459,6 +11779,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922524243306",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "11",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922524244002": [
@@ -11365,6 +12697,18 @@
       "page": 12,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-FN-seat.pdf",
       "seating_image": "evidence/8b4f880f7902_23.11.26-FN-seat_page_24.png"
+    },
+    {
+      "register_number": "922524244501",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "13",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922525244005": [
@@ -11403,6 +12747,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922525244005",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "4",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244017": [
@@ -11441,6 +12797,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922525244017",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "8",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244027": [
@@ -11479,6 +12847,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922525244027",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "10",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244033": [
@@ -11517,6 +12897,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922525244033",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "16",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244045": [
@@ -11555,6 +12947,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_4.png"
+    },
+    {
+      "register_number": "922525244045",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "18",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244049": [
@@ -11631,6 +13035,18 @@
       "page": 5,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922525244059",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "22",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523104049": [
@@ -11759,6 +13175,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523114056",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "23",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922523114056",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "13",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523118059": [
@@ -11891,6 +13331,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_36.png"
+    },
+    {
+      "register_number": "922523205096",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "8",
+      "subject_code": "23ITT401",
+      "subject_name": "WEB ESSENTIALS",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922523205170": [
@@ -14681,6 +16133,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_1.png"
+    },
+    {
+      "register_number": "922524105001",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "21",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524105002": [
@@ -14803,6 +16267,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524105008",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "23",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524105009": [
@@ -14901,6 +16377,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524105016",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "25",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922524105018": [
@@ -14985,6 +16473,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_2.png"
+    },
+    {
+      "register_number": "922524105023",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "3",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105024": [
@@ -15069,6 +16569,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524105030",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "7",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105031": [
@@ -15083,6 +16595,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_3.png"
+    },
+    {
+      "register_number": "922524105031",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "9",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105033": [
@@ -15219,6 +16743,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524105040",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "13",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105041": [
@@ -15233,6 +16769,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524105041",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "17",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105042": [
@@ -15287,6 +16835,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_23.png"
+    },
+    {
+      "register_number": "922524105044",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "19",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105046": [
@@ -15407,6 +16967,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524105052",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "23",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105053": [
@@ -15583,6 +17155,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_5.png"
+    },
+    {
+      "register_number": "922524105063",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A02",
+      "seat_number": "27",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_2.png"
     }
   ],
   "922524105301": [
@@ -15719,6 +17303,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_15.png"
+    },
+    {
+      "register_number": "922524114002",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "17",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114003": [
@@ -15969,6 +17565,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_17.png"
+    },
+    {
+      "register_number": "922524114019",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "19",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114020": [
@@ -16011,6 +17619,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_17.png"
+    },
+    {
+      "register_number": "922524114022",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "21",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114023": [
@@ -16079,6 +17699,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_26.png"
+    },
+    {
+      "register_number": "922524114026",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "23",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114027": [
@@ -16135,6 +17767,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_17.png"
+    },
+    {
+      "register_number": "922524114030",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "25",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114031": [
@@ -16203,6 +17847,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_18.png"
+    },
+    {
+      "register_number": "922524114034",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "27",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922524114035": [
@@ -16313,6 +17969,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_26.png"
+    },
+    {
+      "register_number": "922524114041",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "3",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114042": [
@@ -16423,6 +18091,30 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_26.png"
+    },
+    {
+      "register_number": "922524114049",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "25",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524114049",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "5",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114050": [
@@ -16491,6 +18183,30 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_26.png"
+    },
+    {
+      "register_number": "922524114053",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "27",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922524114053",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "7",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114054": [
@@ -16505,6 +18221,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_19.png"
+    },
+    {
+      "register_number": "922524114054",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "9",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114055": [
@@ -16533,6 +18261,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_19.png"
+    },
+    {
+      "register_number": "922524114056",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "11",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114057": [
@@ -16643,6 +18383,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/23.11.26-AN-seat.pdf",
       "seating_image": "evidence/87169b9af493_23.11.26-AN-seat_page_20.png"
+    },
+    {
+      "register_number": "922524114301",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "13",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ],
   "922524114302": [
@@ -22723,6 +24475,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922524214026",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "8",
+      "subject_code": "23BTT403",
+      "subject_name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922524214027": [
@@ -22947,6 +24711,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922525244006",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "6",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244007": [
@@ -23467,6 +25243,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_3.png"
+    },
+    {
+      "register_number": "922525244029",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "12",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244030": [
@@ -23987,6 +25775,18 @@
       "page": 4,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_4.png"
+    },
+    {
+      "register_number": "922525244053",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "20",
+      "subject_code": "23MAT204",
+      "subject_name": "LINEAR ALGEBRA",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922525244054": [
@@ -24369,6 +26169,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_4.png"
+    },
+    {
+      "register_number": "922523105017",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "5",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105030": [
@@ -24407,6 +26219,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523105030",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "9",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105045": [
@@ -24447,6 +26271,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_4.png"
+    },
+    {
+      "register_number": "922523105051",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "17",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523105054": [
@@ -24475,6 +26311,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_21.png"
+    },
+    {
+      "register_number": "922523106044",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "6",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106089": [
@@ -24501,6 +26349,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922523106089",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "20",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106122": [
@@ -24529,6 +26389,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_22.png"
+    },
+    {
+      "register_number": "922523106128",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "16",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106147": [
@@ -24557,6 +26429,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_22.png"
+    },
+    {
+      "register_number": "922523106156",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "28",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106176": [
@@ -24571,6 +26455,18 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_22.png"
+    },
+    {
+      "register_number": "922523106176",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "18",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106188": [
@@ -24599,6 +26495,30 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_22.png"
+    },
+    {
+      "register_number": "922523106201",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "2",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    },
+    {
+      "register_number": "922523106201",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "20",
+      "subject_code": "23PHT204",
+      "subject_name": "PHYSICS FOR ELECTRONICS ENGINEERING",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
     }
   ],
   "922523106248": [
@@ -24641,6 +26561,30 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_24.png"
+    },
+    {
+      "register_number": "922523114003",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "17",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922523114003",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "3",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523114004": [
@@ -24655,6 +26599,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_24.png"
+    },
+    {
+      "register_number": "922523114004",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "5",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523114005": [
@@ -24683,6 +26639,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_24.png"
+    },
+    {
+      "register_number": "922523114008",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "19",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
     }
   ],
   "922523114020": [
@@ -24711,6 +26679,18 @@
       "page": 6,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_25.png"
+    },
+    {
+      "register_number": "922523114031",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "7",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523114034": [
@@ -24737,6 +26717,30 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523114034",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A04",
+      "seat_number": "21",
+      "subject_code": "23MET403",
+      "subject_name": "HYDRAULICS AND PNEUMATICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_4.png"
+    },
+    {
+      "register_number": "922523114034",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "9",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523114041": [
@@ -24943,6 +26947,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922523203001",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "24",
+      "subject_code": "23MAT403",
+      "subject_name": "STATISTICS AND QUALITY CONTROL",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
     }
   ],
   "922523203019": [
@@ -24971,6 +26987,18 @@
       "page": 12,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_27.png"
+    },
+    {
+      "register_number": "922523214006",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "6",
+      "subject_code": "23BTT403",
+      "subject_name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922523214009": [
@@ -34027,6 +36055,18 @@
       "page": 13,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_29.png"
+    },
+    {
+      "register_number": "922525401001",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "10",
+      "subject_code": "23OCT315",
+      "subject_name": "ETHICAL MANAGEMENT",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525401002": [
@@ -34041,6 +36081,18 @@
       "page": 13,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_29.png"
+    },
+    {
+      "register_number": "922525401002",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "12",
+      "subject_code": "23OCT315",
+      "subject_name": "ETHICAL MANAGEMENT",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525405001": [
@@ -34055,6 +36107,18 @@
       "page": 14,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922525405001",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "3",
+      "subject_code": "23OENC4201",
+      "subject_name": "INTERNET OF THINGS AND CLOUD",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525405002": [
@@ -34069,6 +36133,18 @@
       "page": 14,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922525405002",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "5",
+      "subject_code": "23OENC4201",
+      "subject_name": "INTERNET OF THINGS AND CLOUD",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525405003": [
@@ -34083,6 +36159,18 @@
       "page": 14,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922525405003",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "7",
+      "subject_code": "23OENC4201",
+      "subject_name": "INTERNET OF THINGS AND CLOUD",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525405004": [
@@ -34097,6 +36185,18 @@
       "page": 14,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922525405004",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "9",
+      "subject_code": "23OENC4201",
+      "subject_name": "INTERNET OF THINGS AND CLOUD",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922525405005": [
@@ -34111,6 +36211,18 @@
       "page": 14,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/c0c608e21f01_24.11.26-FN-SEAT_page_28.png"
+    },
+    {
+      "register_number": "922525405005",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III 01",
+      "seat_number": "11",
+      "subject_code": "23OENC4201",
+      "subject_name": "INTERNET OF THINGS AND CLOUD",
+      "page": 5,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_5.png"
     }
   ],
   "922523104008": [
@@ -34477,6 +36589,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922523243010",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "3",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243018": [
@@ -34503,6 +36627,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523243018",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "5",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243024": [
@@ -34529,6 +36665,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523243024",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "7",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243027": [
@@ -34543,6 +36691,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922523243027",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "9",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243044": [
@@ -34557,6 +36717,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922523243044",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "17",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243068": [
@@ -34571,6 +36743,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922523243068",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "23",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243081": [
@@ -34597,6 +36781,18 @@
       "page": 2,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_2.png"
+    },
+    {
+      "register_number": "922523243081",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "25",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523243096": [
@@ -34639,6 +36835,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_35.png"
+    },
+    {
+      "register_number": "922523243304",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "3",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922523243305": [
@@ -34653,6 +36861,18 @@
       "page": 8,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_36.png"
+    },
+    {
+      "register_number": "922523243305",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "5",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922523244049": [
@@ -34667,6 +36887,18 @@
       "page": 10,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/24.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/595a49d28b6d_24.11.26-AN-SEAT_page_36.png"
+    },
+    {
+      "register_number": "922523244049",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "9",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
     }
   ],
   "922525104001": [
@@ -46035,6 +48267,18 @@
       "page": 1,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-FN-SEAT.pdf",
       "seating_image": "evidence/f3e40c517fa9_25.11.26-FN-SEAT_page_1.png"
+    },
+    {
+      "register_number": "922523106087",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "18",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
     }
   ],
   "922523106240": [
@@ -46105,6 +48349,202 @@
       "page": 3,
       "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/25.11.26-AN-SEAT.pdf",
       "seating_image": "evidence/b23e05615841_25.11.26-AN-SEAT_page_3.png"
+    }
+  ],
+  "922523106008": [
+    {
+      "register_number": "922523106008",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "4",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523106034": [
+    {
+      "register_number": "922523106034",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "10",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523106042": [
+    {
+      "register_number": "922523106042",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "12",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523106207": [
+    {
+      "register_number": "922523106207",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "4",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    }
+  ],
+  "922523106212": [
+    {
+      "register_number": "922523106212",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "6",
+      "subject_code": "23ECT401",
+      "subject_name": "ELECTROMAGNETIC FIELDS AND TRANSMISSION LINES",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    }
+  ],
+  "922523243028": [
+    {
+      "register_number": "922523243028",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "11",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523243035": [
+    {
+      "register_number": "922523243035",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "13",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523243054": [
+    {
+      "register_number": "922523243054",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "19",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523243062": [
+    {
+      "register_number": "922523243062",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "21",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523243303": [
+    {
+      "register_number": "922523243303",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A01",
+      "seat_number": "27",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_1.png"
+    }
+  ],
+  "922523244036": [
+    {
+      "register_number": "922523244036",
+      "exam_date": "2026-11-26",
+      "session": "FN",
+      "hall_number": "MB III A02",
+      "seat_number": "7",
+      "subject_code": "23MAT401",
+      "subject_name": "PROBABILITY AND STATISTICS",
+      "page": 2,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-FN-seat.pdf",
+      "seating_image": "evidence/e7c801b6d660_26.11.26-FN-seat_page_2.png"
+    }
+  ],
+  "922523105047": [
+    {
+      "register_number": "922523105047",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A01",
+      "seat_number": "13",
+      "subject_code": "23EET201",
+      "subject_name": "ELECTRIC CIRCUIT ANALYSIS",
+      "page": 1,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_1.png"
+    }
+  ],
+  "922523114048": [
+    {
+      "register_number": "922523114048",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A03",
+      "seat_number": "11",
+      "subject_code": "23MET401",
+      "subject_name": "THEORY OF MACHINES",
+      "page": 3,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_3.png"
+    }
+  ],
+  "922524405011": [
+    {
+      "register_number": "922524405011",
+      "exam_date": "2026-11-26",
+      "session": "AN",
+      "hall_number": "MB III A04",
+      "seat_number": "17",
+      "subject_code": "23CPTP252",
+      "subject_name": "MACHINE LEARNING",
+      "page": 4,
+      "source_url": "https://vsbec.edu.in/wp-content/uploads/2026/11/26.11.26-AN-seat.pdf",
+      "seating_image": "evidence/f7f3eb65b251_26.11.26-AN-seat_page_4.png"
     }
   ]
 }
